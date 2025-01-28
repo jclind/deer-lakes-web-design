@@ -1,0 +1,101 @@
+@use '../../styles/vars' as *;
+
+$navbar-height-desktop: 90px;
+$navbar-height-mobile: 60px;
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: $navbar-height-desktop;
+  background: $primary-background;
+  width: 100%;
+  border-bottom: 1px solid $border-color;
+  position: relative;
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: $max-width-container;
+    width: $max-width-percentage;
+
+    .logo {
+      height: 60px;
+      width: 185px;
+      img {
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: $gap-large;
+
+      @media (max-width: $breakpoint-lg) {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: $gap-medium;
+        width: 100%;
+        // background: red;
+        padding: $gap-medium 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        list-style: none;
+        opacity: 0;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 0.5s ease-in-out;
+        padding: $gap-medium 0;
+
+        &.open {
+          max-height: 500px;
+          opacity: 1;
+        }
+      }
+    }
+    .link {
+      color: $primary-text;
+      text-transform: uppercase;
+      font-size: $fs-regular;
+      font-weight: 700;
+      opacity: 0;
+      transform: translateX(-20px);
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+
+      @media (max-width: $breakpoint-lg) {
+        margin-left: calc((100% - $max-width-percentage) / 2);
+        font-size: $fs-small;
+      }
+    }
+    .active {
+      color: $primary-accent;
+    }
+    .open {
+      display: flex;
+      .link {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+  .hamburger {
+    display: none;
+    background: $primary-accent;
+    border-radius: 10px;
+    padding: 2px;
+    color: $primary-background;
+    @media (max-width: $breakpoint-lg) {
+      display: block;
+    }
+  }
+}

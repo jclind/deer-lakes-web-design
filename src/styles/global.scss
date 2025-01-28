@@ -1,0 +1,189 @@
+@use 'vars' as *;
+
+/* Reset & Base Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: $font-size-base;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: $font-family-base;
+  line-height: $line-height-base;
+  color: $primary-text;
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: $spacing-medium;
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: $spacing-medium;
+}
+
+a {
+  color: $primary-text;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Lists */
+ul,
+ol {
+  margin-bottom: $spacing-medium;
+  padding-left: $spacing-large;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Utility Classes */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-medium;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Grid System */
+.grid {
+  display: grid;
+  gap: $spacing-medium;
+}
+
+/* Flexbox Utilities */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Spacing Utilities */
+.mt-1 {
+  margin-top: $spacing-small;
+}
+.mt-2 {
+  margin-top: $spacing-medium;
+}
+.mt-3 {
+  margin-top: $spacing-large;
+}
+
+.mb-1 {
+  margin-bottom: $spacing-small;
+}
+.mb-2 {
+  margin-bottom: $spacing-medium;
+}
+.mb-3 {
+  margin-bottom: $spacing-large;
+}
+
+/* Responsive Breakpoints */
+@media (min-width: $breakpoint-sm) {
+  // Small device styles
+}
+
+@media (min-width: $breakpoint-md) {
+  // Medium device styles
+}
+
+@media (min-width: $breakpoint-lg) {
+  // Large device styles
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+/* Form Elements */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+}
+
+/* Focus Styles */
+:focus {
+  outline: 2px solid $primary-text;
+  outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+  @page {
+    margin: 2cm;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  .no-print {
+    display: none;
+  }
+}
