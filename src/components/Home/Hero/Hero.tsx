@@ -5,7 +5,7 @@ import { ButtonLink } from '../../ButtonLink'
 const Hero = () => {
   return (
     <div className={styles.hero}>
-      <div className={styles.hero__inner}>
+      <div className={`${styles.hero__inner} page__inner`}>
         <div className={styles.content}>
           <h1 className='page-title text-inverted'>
             Web Design for <br /> Small Businesses
@@ -16,12 +16,8 @@ const Hero = () => {
             $150/mo.
           </p>
           <div className={styles.buttons}>
-            <ButtonLink
-              text='Get Started'
-              link='/contact'
-              variation='tertiary'
-            />
-            <ButtonLink text='Learn More' link='/about' variation='secondary' />
+            <ButtonLink text='Get Started' link='/contact' color='tertiary' />
+            <ButtonLink text='Learn More' link='/about' color='secondary' />
           </div>
         </div>
         <div className={styles.image}>

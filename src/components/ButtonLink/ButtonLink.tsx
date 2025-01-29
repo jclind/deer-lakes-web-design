@@ -4,16 +4,18 @@ import styles from './ButtonLink.module.scss'
 const ButtonLink = ({
   text,
   link,
-  variation,
+  color = 'primary',
+  size = 'medium',
 }: {
   text: string
   link: string
-  variation: 'primary' | 'secondary' | 'tertiary'
+  color?: 'primary' | 'secondary' | 'tertiary'
+  size?: 'small' | 'medium' | 'large'
 }) => {
   return (
     <a
       href={link}
-      className={`${styles.button_link} ${styles[variation]} button`}
+      className={`${styles.button_link} ${styles[color]} ${styles[size]} button`}
     >
       {text}
     </a>

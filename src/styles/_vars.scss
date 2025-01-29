@@ -3,6 +3,7 @@ $primary-text: #212a33;
 $secondary-text: #53565a;
 $secondary-header: #484f56;
 $primary-background: #ffffff;
+$secondary-background: #eaeaea;
 $primary-accent: #553acf;
 $secondary-accent: #276aed;
 
@@ -13,6 +14,7 @@ $line-height-base: 1.5;
 
 $fs-small: 14px;
 $fs-regular: 16px;
+$fs-medium: 20px;
 $fs-large: 24px;
 $fs-xlarge: 32px;
 $fs-header: 36px;
@@ -51,3 +53,10 @@ $z-index-tooltip: 3000;
 // Widths
 $max-width-container: 1100px;
 $max-width-percentage: 90%;
+
+// Card
+$card-background: #fafafa;
+$border-radius-card: 15px;
+$box-shadow-card: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+  rgba(0, 0, 0, 0.23) 0px 3px 6px;
+$fs-card-text: $fs-small;

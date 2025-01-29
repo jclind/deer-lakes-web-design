@@ -5,7 +5,8 @@
   width: 140px;
   height: 40px;
   white-space: nowrap;
-  font-size: $fs-regular;
+  font-size: $fs-small;
+
   font-weight: 700;
   border-radius: $border-radius-button;
 
@@ -20,5 +21,8 @@
   &.tertiary {
     background: $secondary-accent;
     color: $primary-background;
+  }
+  &.large {
+    width: 160px;
   }
 }
