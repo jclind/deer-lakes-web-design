@@ -3,11 +3,13 @@ import Layout from '../layouts/Layout.astro';
 import { Navbar } from '../components/Navbar';
 import '../styles/global.scss';
 import { Hero } from '../components/Home/Hero';
-import { WhyChooseUs } from '../components/WhyChooseUs';
+import { WhyChooseUs } from '../components/Home/WhyChooseUs';
+import { BusinessModelInfo } from '../components/Home/BusinessModelInfo';
 ---
 
 <Layout>
 	<Navbar currentPath={Astro.url.pathname} client:load />
 	<Hero />
-	<WhyChooseUs />	
+	<WhyChooseUs />
+	<BusinessModelInfo />
 </Layout>

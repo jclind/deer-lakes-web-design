@@ -1,10 +1,9 @@
-@import '../../styles/vars';
+@import '../../../styles/vars';
 
 $feature-height: 300px;
 
 .why_choose_us {
   background-color: $primary-background;
-  padding-bottom: 100rem;
   .content {
     p {
       margin: 0 auto;
@@ -41,7 +40,7 @@ $feature-height: 300px;
           height: 30px;
           width: 30px;
           color: $primary-accent;
-          stroke-width: 0.3;
+          stroke-width: $icon-stroke-width;
         }
       }
       h2 {
