@@ -28,9 +28,7 @@ const Hero = () => {
           <img src='/images/DLWD_mockup_landing_page.jpg' alt='Design mockup' />
         </div>
       </div>
-      <div className={styles.waves}>
-        <img src='/images/home_hero_waves.svg' alt='divider waves' />
-      </div>
+      <div className={styles.waves}></div>
     </div>
   )
 }
