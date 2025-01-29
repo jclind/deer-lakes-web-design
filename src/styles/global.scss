@@ -39,6 +39,8 @@ h6 {
 p {
   margin-bottom: $spacing-medium;
   line-height: 1.2;
+  max-width: $max-width-paragraph;
+  width: 100%;
 }
 
 a {
@@ -237,6 +239,8 @@ button,
   border-radius: $border-radius-card;
   padding: $gap-medium;
   box-shadow: $box-shadow-card;
+  max-width: 320px;
+  width: 100%;
   .card-title {
     font-size: $fs-medium;
   }

@@ -5,11 +5,19 @@ $feature-height: 300px;
 .why_choose_us {
   background-color: $primary-background;
   padding-bottom: 100rem;
+  .content {
+    p {
+      margin: 0 auto;
+    }
+  }
   .features {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: $gap-medium;
     margin: $gap-large 0;
+
     .feature {
       display: flex;
       flex-direction: column;
@@ -44,6 +52,15 @@ $feature-height: 300px;
         margin-bottom: $gap-small;
         height: 48px;
       }
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: $gap-medium;
+    }
+    @media (min-width: $breakpoint-xl) {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }

@@ -1,13 +1,17 @@
 @use '../../styles/vars' as *;
 
 $navbar-height-desktop: 90px;
-$navbar-height-mobile: 60px;
+$navbar-height-mobile: 70px;
 
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   height: $navbar-height-desktop;
+  min-height: $navbar-height-desktop;
+  max-height: $navbar-height-desktop;
+  height: 100px;
   background: $primary-background;
   width: 100%;
   border-bottom: 1px solid $border-color;
@@ -26,6 +30,10 @@ $navbar-height-mobile: 60px;
       img {
         height: 100%;
         object-fit: contain;
+      }
+      @media (max-width: $breakpoint-lg) {
+        height: 50px;
+        width: 155px;
       }
     }
     .links {
@@ -99,5 +107,11 @@ $navbar-height-mobile: 60px;
     @media (max-width: $breakpoint-lg) {
       display: block;
     }
+  }
+
+  @media (max-width: $breakpoint-lg) {
+    height: $navbar-height-mobile;
+    min-height: $navbar-height-mobile;
+    max-height: $navbar-height-mobile;
   }
 }
