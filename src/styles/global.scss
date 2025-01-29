@@ -199,8 +199,18 @@ button,
 }
 
 // Sections
-.section-title {
+.page-title {
   font-size: $fs-xlarge;
+  font-weight: 800;
+  text-align: center;
+}
+.page-paragraph {
+  font-size: $fs-regular;
+  font-weight: 400;
+  text-align: center;
+}
+.section-title {
+  font-size: $fs-large;
   font-weight: 800;
   text-align: center;
 }

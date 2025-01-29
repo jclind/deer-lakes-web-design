@@ -7,7 +7,7 @@ const Hero = () => {
     <div className={styles.hero}>
       <div className={styles.hero__inner}>
         <div className={styles.content}>
-          <h1 className='section-title text-inverted'>
+          <h1 className='page-title text-inverted'>
             Web Design for <br /> Small Businesses
           </h1>
           <p className='section-paragraph text-inverted'>
