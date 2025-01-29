@@ -1,0 +1,53 @@
+@import '../../../styles/vars';
+
+.hero {
+  display: flex;
+  position: relative;
+  justify-content: center;
+
+  width: 100%;
+  background: $primary-accent;
+
+  .hero__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: $max-width-container;
+    width: $max-width-percentage;
+    margin-top: $gap-xlarge;
+    margin-bottom: $gap-xxlarge;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: $gap-xlarge;
+
+      .buttons {
+        display: flex;
+        gap: $gap-large;
+        margin-top: $gap-large;
+      }
+    }
+    .image {
+      width: 200px;
+      img {
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+  }
+  .waves {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    bottom: 0;
+    width: 100%;
+    img {
+      object-fit: fill;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

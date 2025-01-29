@@ -18,9 +18,7 @@ html {
 
 body {
   display: flex;
-  justify-content: center;
   font-family: $font-family-base;
-  line-height: $line-height-base;
   color: $primary-text;
   background-color: #fff;
   width: 100%;
@@ -34,12 +32,13 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: $spacing-medium;
-  line-height: 1.2;
+  margin-bottom: $gap-medium;
+  line-height: 1.1;
 }
 
 p {
   margin-bottom: $spacing-medium;
+  line-height: 1.2;
 }
 
 a {
@@ -156,7 +155,11 @@ select {
   font: inherit;
 }
 
-button {
+button,
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   border: none;
   background: none;
@@ -186,4 +189,26 @@ button {
   .no-print {
     display: none;
   }
+}
+
+// Page
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+// Sections
+.section-title {
+  font-size: $fs-xlarge;
+  font-weight: 800;
+  text-align: center;
+}
+.section-paragraph {
+  font-size: $fs-regular;
+  font-weight: 400;
+  text-align: center;
+}
+.text-inverted {
+  color: $primary-background;
 }

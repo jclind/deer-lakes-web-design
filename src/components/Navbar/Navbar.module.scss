@@ -29,10 +29,12 @@ $navbar-height-mobile: 60px;
       }
     }
     .links {
+      z-index: $z-index-dropdown;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: $gap-large;
+      background: $primary-background;
 
       @media (max-width: $breakpoint-lg) {
         position: absolute;
