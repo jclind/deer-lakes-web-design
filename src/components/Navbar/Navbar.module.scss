@@ -70,11 +70,11 @@ $navbar-height-mobile: 60px;
       text-transform: uppercase;
       font-size: $fs-regular;
       font-weight: 700;
-      opacity: 0;
-      transform: translateX(-20px);
-      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 
       @media (max-width: $breakpoint-lg) {
+        opacity: 0;
+        transform: translateX(-20px);
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
         margin-left: calc((100% - $max-width-percentage) / 2);
         font-size: $fs-small;
       }
