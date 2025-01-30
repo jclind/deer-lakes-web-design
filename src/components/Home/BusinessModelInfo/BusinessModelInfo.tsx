@@ -6,7 +6,7 @@ import { ButtonLink } from '../../../components/ButtonLink'
 const BusinessModelInfo = () => {
   return (
     <div className={styles.business_model_info}>
-      <div className='page__inner'>
+      <div className={`page__inner ${styles.page__inner}`}>
         <div className={styles.headshot_container}>
           <div className={styles.headshot_image}>
             <img src='/images/jesse_lind_headshot.jpg' alt='headshot' />
@@ -17,7 +17,9 @@ const BusinessModelInfo = () => {
         </div>
         <div className={styles.content}>
           <h1 className='section-title'>
-            Affordable Websites, Built for Your Small Business
+            Affordable Websites
+            <br />
+            Built for Your Small Business
           </h1>
           <p className='section-paragraph'>
             With our $150/month plan, you'll get{' '}
@@ -43,8 +45,8 @@ const BusinessModelInfo = () => {
               </div>
             ))}
           </div>
+          <ButtonLink text="Let's Get Started" link='/contact' size='large' />
         </div>
-        <ButtonLink text="Let's Get Started" link='/contact' size='large' />
       </div>
     </div>
   )

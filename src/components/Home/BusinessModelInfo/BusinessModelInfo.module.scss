@@ -1,7 +1,7 @@
 @import '../../../styles/_vars.scss';
 
 .business_model_info {
-  margin-top: $gap-xlarge;
+  margin-top: $gap-xxlarge;
   padding-bottom: $gap-xxxlarge;
 
   .headshot_container {
@@ -32,18 +32,24 @@
     }
   }
   .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    margin: $gap-large 0;
+    margin-top: $gap-large;
 
     .features {
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: $gap-medium;
       width: 100%;
-      margin-top: $gap-large;
+      margin: $gap-large 0;
 
       .feature {
         width: 100%;
+        max-width: 400px;
 
         .head {
           display: flex;
@@ -74,6 +80,49 @@
           color: $secondary-text;
         }
       }
+
+      @media (min-width: $breakpoint-md) {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $gap-large;
+        max-width: 700px;
+      }
+    }
+    @media (min-width: $breakpoint-lg) {
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin: 0;
+      h2 {
+        font-size: $fs-regular !important;
+      }
+      h1,
+      p {
+        text-align: left;
+      }
+    }
+  }
+  @media (min-width: $breakpoint-lg) {
+    .page__inner {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: $gap-large;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    .headshot_container {
+      justify-content: flex-start;
+      align-items: flex-start;
+      .headshot_image {
+        max-width: 500px;
+        height: 600px !important;
+      }
+    }
+  }
+  @media (min-width: $breakpoint-xl) {
+    .page__inner {
+      grid-template-columns: 1fr 1fr;
     }
   }
 }
