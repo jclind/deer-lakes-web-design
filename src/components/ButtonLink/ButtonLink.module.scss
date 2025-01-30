@@ -22,7 +22,15 @@
     background: $secondary-accent;
     color: $primary-background;
   }
+  &.white {
+    background: $primary-background;
+    color: $primary-text;
+  }
   &.large {
     width: 160px;
+  }
+
+  &.full_width {
+    width: 100%;
   }
 }

@@ -3,9 +3,9 @@ import { BsCircleSquare, BsStar, BsXDiamond } from 'react-icons/bs'
 export const pricing = [
   {
     icon: BsCircleSquare,
-    type: 'Lump Sum',
-    cost: '$3200',
-    costSubHeader: '+25/mo hosting',
+    title: 'Lump Sum',
+    price: '$3200',
+    priceSubHeader: '+25/mo hosting',
     theme: 'secondary',
     features: [
       {
@@ -33,12 +33,13 @@ export const pricing = [
         feature: 'Lifetime Updates',
       },
     ],
+    callToAction: 'Get Started',
   },
   {
     icon: BsStar,
-    type: 'Monthly',
-    cost: '$150/mo',
-    costSubHeader: 'Per Month',
+    title: 'Monthly',
+    price: '$150/mo',
+    priceSubHeader: 'Per Month',
     theme: 'primary',
     features: [
       {
@@ -66,12 +67,13 @@ export const pricing = [
         feature: 'Lifetime Updates',
       },
     ],
+    callToAction: 'Get Started',
   },
   {
     icon: BsXDiamond,
-    type: 'Custom',
-    cost: 'Custom',
-    costSubHeader: '',
+    title: 'Custom',
+    price: 'Custom',
+    priceSubHeader: '',
     theme: 'secondary',
     features: [
       {
@@ -99,5 +101,6 @@ export const pricing = [
         feature: 'Lifetime Updates',
       },
     ],
+    callToAction: 'Contact Us',
   },
 ]

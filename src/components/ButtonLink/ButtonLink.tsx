@@ -9,8 +9,8 @@ const ButtonLink = ({
 }: {
   text: string
   link: string
-  color?: 'primary' | 'secondary' | 'tertiary'
-  size?: 'small' | 'medium' | 'large'
+  color?: 'primary' | 'secondary' | 'tertiary' | 'white'
+  size?: 'small' | 'medium' | 'large' | 'full_width'
 }) => {
   return (
     <a

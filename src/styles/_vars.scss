@@ -7,6 +7,8 @@ $secondary-background: #eaeaea;
 $primary-accent: #553acf;
 $secondary-accent: #276aed;
 
+$border-color: #d9d9d9;
+
 // Typography
 $font-family-base: 'Montserrat', sans-serif;
 $font-size-base: 16px;
@@ -19,6 +21,7 @@ $fs-regular: 16px;
 $fs-medium: 20px;
 $fs-large: 24px;
 $fs-xlarge: 32px;
+$fs-xxlarge: 40px;
 $fs-header: 36px;
 
 // Spacing
@@ -46,7 +49,6 @@ $breakpoint-xl: 1200px;
 $border-radius: 12px;
 $border-radius-button: 12px;
 $border-width: 1px;
-$border-color: #dee2e6;
 
 // Z-index
 $z-index-dropdown: 1000;
