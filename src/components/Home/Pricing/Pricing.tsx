@@ -3,6 +3,7 @@ import styles from './Pricing.module.scss'
 import { pricing } from './pricingData'
 import { BsCheck, BsX } from 'react-icons/bs'
 import { ButtonLink } from '../../Common/ButtonLink'
+import { Divider } from '../../Common/Divider'
 const Pricing = () => {
   return (
     <div className={styles.pricing}>
@@ -30,7 +31,7 @@ const Pricing = () => {
                 </div>
               </div>
 
-              <div className={styles.divider}></div>
+              <Divider />
 
               <div className={styles.features}>
                 {item.features.map(feature => (

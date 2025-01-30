@@ -1,1 +1,9 @@
 @import '../../../styles/vars';
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background: $border-color;
+  border-radius: 10px;
+  margin: $gap-regular 0;
+}
