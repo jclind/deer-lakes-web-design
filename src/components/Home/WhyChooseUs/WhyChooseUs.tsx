@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './WhyChooseUs.module.scss'
 import { features } from './features'
-import { ButtonLink } from '../../ButtonLink'
+import { ButtonLink } from '../../Common/ButtonLink'
 
 const WhyChooseUs = () => {
   return (

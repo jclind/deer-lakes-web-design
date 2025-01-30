@@ -8,7 +8,9 @@ import { BusinessModelInfo } from '../components/Home/BusinessModelInfo';
 import { PerformanceInfo } from '../components/Home/PerformanceInfo';
 import { Pricing } from '../components/Home/Pricing';
 import { CallToAction } from '../components/Layout/CallToAction';
+import { Footer } from '../components/Layout/Footer';
 ---
+
 
 <Layout>
 	<Navbar currentPath={Astro.url.pathname} client:load />
@@ -18,5 +20,6 @@ import { CallToAction } from '../components/Layout/CallToAction';
 	<PerformanceInfo />
 	<Pricing />
 	<CallToAction />
+	<Footer />
 	<div class="spacer"></div>
 </Layout>

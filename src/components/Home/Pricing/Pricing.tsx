@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Pricing.module.scss'
 import { pricing } from './pricingData'
 import { BsCheck, BsX } from 'react-icons/bs'
-import { ButtonLink } from '../../ButtonLink'
+import { ButtonLink } from '../../Common/ButtonLink'
 const Pricing = () => {
   return (
     <div className={styles.pricing}>

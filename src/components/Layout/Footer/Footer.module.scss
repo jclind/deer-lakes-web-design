@@ -1,0 +1,35 @@
+@use '../../../styles/vars' as *;
+
+.footer {
+  background: $primary-text;
+  color: $primary-background;
+  padding: $gap-large 0;
+  .links__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    .image {
+      height: 60px;
+      margin-bottom: $gap-large;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    .links {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+      gap: $gap-regular;
+      .link {
+        a {
+          color: $primary-background;
+          font-size: $fs-small;
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Hero.module.scss'
-import { ButtonLink } from '../../ButtonLink'
+import { ButtonLink } from '../../Common/ButtonLink'
 
 const Hero = () => {
   return (

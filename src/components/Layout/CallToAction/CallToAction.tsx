@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './CallToAction.module.scss'
-import { ButtonLink } from '../../ButtonLink'
+import { ButtonLink } from '../../Common/ButtonLink'
 const CallToAction = () => {
   return (
     <div className={styles.call_to_action}>
