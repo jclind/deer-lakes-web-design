@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './Footer.module.scss'
 import { links } from './links'
+import { Divider } from '../../Common/Divider'
+import { contactInfo } from './contactInfo'
 const Footer = () => {
   return (
     <footer className={styles.footer}>
@@ -18,6 +20,28 @@ const Footer = () => {
                 <a href={link.path}>{link.title}</a>
               </div>
             ))}
+          </div>
+        </div>
+        <Divider space='large' color='dark' />
+        <div className={styles.contact_info}>
+          {contactInfo.map(item => (
+            <div className={styles.item}>
+              <div className={styles.icon__container}>
+                <item.icon className={styles.icon} />
+              </div>
+              <span>{item.text}</span>
+            </div>
+          ))}
+        </div>
+        <Divider space='large' color='dark' />
+        <div className={styles.copyright}>
+          <div
+            className={styles.text}
+          >{`© Copyright ${new Date().getFullYear()} Deer Lakes Web Design `}</div>
+          <div className={styles.legal}>
+            <a href='/terms-of-service'>Terms</a>
+            <span>|</span>
+            <a href='/privacy-policy'>Privacy</a>
           </div>
         </div>
       </div>

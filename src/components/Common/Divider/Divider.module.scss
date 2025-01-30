@@ -6,4 +6,15 @@
   background: $border-color;
   border-radius: 10px;
   margin: $gap-regular 0;
+
+  &.medium {
+    margin: $gap-medium 0;
+  }
+  &.large {
+    margin: $gap-large 0;
+  }
+
+  &.dark {
+    background: $secondary-border-color;
+  }
 }

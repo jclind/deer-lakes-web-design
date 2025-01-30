@@ -23,12 +23,51 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       width: 100%;
-      gap: $gap-regular;
+      gap: $gap-medium;
       .link {
         a {
           color: $primary-background;
-          font-size: $fs-small;
+          font-size: $fs-regular;
         }
+      }
+    }
+  }
+  .contact_info {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-medium;
+    width: 100%;
+    .item {
+      display: flex;
+      font-size: $fs-regular;
+      gap: $gap-regular;
+      .icon__container {
+        height: 24px;
+        width: 24px;
+        .icon {
+          height: 24px;
+          width: 24px;
+        }
+      }
+      span {
+        align-self: self-end;
+      }
+    }
+  }
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: $gap-regular;
+
+    font-size: $fs-small;
+    color: $secondary-background;
+    .legal {
+      display: flex;
+      justify-content: center;
+      gap: $gap-regular;
+      a {
+        color: $secondary-background;
       }
     }
   }
