@@ -1,0 +1,59 @@
+@use '../../../styles/vars' as *;
+
+.call_to_action {
+  position: relative;
+  .card {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: $gap-large;
+    max-width: $max-width-container !important;
+    width: $max-width-percentage !important;
+
+    .image {
+      max-width: 150px;
+      width: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p {
+        margin-bottom: $gap-medium;
+      }
+    }
+
+    @media (min-width: $breakpoint-md) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      .image {
+        max-width: 200px;
+        width: 100%;
+      }
+      .content {
+        align-items: flex-start;
+
+        p {
+          text-align: left;
+          max-width: 400px;
+        }
+      }
+    }
+  }
+
+  .half_background {
+    z-index: -1 !important;
+    background: $primary-text;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
