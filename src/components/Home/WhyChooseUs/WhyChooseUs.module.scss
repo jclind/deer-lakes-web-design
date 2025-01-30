@@ -15,7 +15,8 @@ $feature-height: 300px;
     justify-content: center;
     align-items: center;
     gap: $gap-medium;
-    margin: $gap-large 0;
+    margin-top: $gap-large;
+    margin-bottom: $gap-xlarge;
 
     .feature {
       display: flex;
