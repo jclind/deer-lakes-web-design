@@ -1,0 +1,33 @@
+@use '../../../../styles/vars' as *;
+
+.about_me {
+  padding: $gap-xlarge 0;
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $gap-tiny;
+
+    .image {
+      width: 80%;
+      max-width: 275px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .content {
+      h2,
+      p {
+        text-align: start;
+        margin-bottom: $gap-regular;
+      }
+      .text {
+        margin-bottom: $gap-large;
+      }
+    }
+  }
+}
