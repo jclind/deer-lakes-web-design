@@ -5,8 +5,8 @@ const AboutMe = () => {
   return (
     <div className={styles.about_me}>
       <div className='page__inner'>
+        <h1 className='section-title'>About Me</h1>
         <div className={styles.container}>
-          <h1 className='section-title'>About Me</h1>
           <div className={styles.image}>
             <img src='/images/about_me_headshot.png' alt='' />
           </div>
@@ -42,7 +42,6 @@ const AboutMe = () => {
                 back guarantee.
               </p>
             </div>
-
             <ButtonLink text='Contact Us' link='/contact' size='large' />
           </div>
         </div>

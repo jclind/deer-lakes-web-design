@@ -29,5 +29,18 @@
         margin-bottom: $gap-large;
       }
     }
+
+    @media (min-width: $breakpoint-lg) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: flex-start;
+      gap: $gap-large;
+      margin-top: $gap-xlarge;
+      .image {
+        order: 2;
+        max-width: 500px;
+        justify-self: flex-end;
+      }
+    }
   }
 }
