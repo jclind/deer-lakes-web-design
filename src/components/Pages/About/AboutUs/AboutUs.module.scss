@@ -61,6 +61,14 @@
             stroke-width: $icon-stroke-width;
           }
         }
+        @media (min-width: $breakpoint-lg) {
+          gap: $gap-regular;
+          margin: $gap-medium 0;
+          .value {
+            font-size: $fs-regular;
+            padding: $gap-small;
+          }
+        }
       }
     }
   }
