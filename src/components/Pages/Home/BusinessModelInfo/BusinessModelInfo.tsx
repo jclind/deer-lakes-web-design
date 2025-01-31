@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './BusinessModelInfo.module.scss'
 import { features } from './features'
 import { BsCheckCircle } from 'react-icons/bs'
-import { ButtonLink } from '../../Common/ButtonLink'
+import { ButtonLink } from '../../../Common/ButtonLink'
 const BusinessModelInfo = () => {
   return (
     <div className={styles.business_model_info}>
