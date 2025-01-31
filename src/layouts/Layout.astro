@@ -1,3 +1,15 @@
+---
+// Import your React components
+import { Navbar } from '../components/Layout/Navbar';
+import { Footer } from '../components/Layout/Footer';
+// You can also receive props in your layout
+interface Props {
+	title?: string;
+}
+
+const { title = "Deer Lakes Web Design" } = Astro.props;
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,13 +17,17 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>{title}</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 	</head>
 	<body class="page">
-		<slot />
+		<Navbar currentPath={Astro.url.pathname} client:load />
+		<main>
+			<slot />
+		</main>
+		<Footer/>
 	</body>
 </html>
 
