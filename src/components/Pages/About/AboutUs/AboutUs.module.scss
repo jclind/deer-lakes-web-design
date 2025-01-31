@@ -1,0 +1,43 @@
+@use '../../../../styles/vars' as *;
+.about_us {
+  padding: $gap-xlarge 0;
+  background: $primary-text;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-large;
+    margin-top: $gap-large;
+    h2,
+    p {
+      text-align: start;
+    }
+    p {
+      font-weight: 400;
+      margin-bottom: $gap-regular;
+    }
+
+    .our_values {
+      .values {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $gap-small;
+        margin-bottom: $gap-regular;
+        .value {
+          display: flex;
+          align-items: center;
+          font-size: $fs-small;
+          gap: $gap-tiny;
+          border: 1px solid $primary-accent;
+          color: $primary-background;
+          padding: $gap-tiny;
+          border-radius: $border-radius-button;
+          letter-spacing: -0.6px;
+          .icon {
+            stroke-width: $icon-stroke-width;
+          }
+        }
+      }
+    }
+  }
+}
