@@ -1,0 +1,65 @@
+@use '../../../../styles/vars' as *;
+
+.info_and_form {
+  margin-top: $gap-xlarge;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-large;
+  }
+  .info {
+    h2,
+    p {
+      text-align: start;
+    }
+
+    .contact_info_container {
+      display: flex;
+      flex-direction: column;
+      gap: $gap-large;
+      margin-top: $gap-large;
+      .info_item {
+        display: flex;
+        align-items: center;
+        gap: $gap-regular;
+
+        .icon_container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 60px;
+          height: 60px;
+          background-color: $secondary-background;
+          border-radius: 50%;
+
+          .icon {
+            height: 25px;
+            width: 25px;
+            stroke-width: $icon-stroke-width;
+            color: $primary-accent;
+          }
+        }
+        .info_item_content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          h3 {
+            font-size: $fs-medium;
+            font-weight: 600;
+            margin: 0;
+            padding-bottom: $gap-tiny;
+          }
+          p {
+            font-weight: 500;
+            color: $secondary-text;
+          }
+        }
+      }
+    }
+  }
+  .form__container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
