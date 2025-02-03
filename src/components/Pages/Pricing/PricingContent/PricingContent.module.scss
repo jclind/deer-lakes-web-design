@@ -1,0 +1,12 @@
+@use '../../../../styles/vars' as *;
+
+.pricing_content {
+  margin: $gap-xlarge 0;
+  .heading {
+    margin-bottom: $gap-large;
+    h1,
+    h2 {
+      text-align: center;
+    }
+  }
+}

@@ -236,8 +236,13 @@ button,
   color: $primary-background;
 }
 
-.tertiary-header {
+.secondary-header {
   font-size: $fs-medium;
+  font-weight: 700;
+  color: $secondary-text;
+}
+.tertiary-header {
+  font-size: $fs-regular;
   font-weight: 700;
   color: $secondary-text;
 }

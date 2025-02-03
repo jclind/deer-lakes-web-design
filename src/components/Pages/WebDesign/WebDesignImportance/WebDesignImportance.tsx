@@ -31,7 +31,7 @@ const WebDesignImportance = () => {
           <div className={styles.web_design_info}>
             {info.map(item => (
               <div className={styles.info_item}>
-                <h3 className={`${styles.info_title} tertiary-header`}>
+                <h3 className={`${styles.info_title} secondary-header`}>
                   {item.title}
                 </h3>
                 <p className={styles.info_description}>{item.description}</p>
