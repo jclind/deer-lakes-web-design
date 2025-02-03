@@ -1,7 +1,8 @@
-@import '../../../../styles/_vars.scss';
+@use '../../../../styles/vars' as *;
 
 .business_model_info {
   margin-top: $gap-xxlarge;
+
   padding-bottom: $gap-xxlarge;
 
   .headshot_container {

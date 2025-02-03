@@ -1,4 +1,4 @@
-@import '../../../../styles/vars';
+@use '../../../../styles/vars' as *;
 
 .hero {
   padding: $gap-xlarge 0;
