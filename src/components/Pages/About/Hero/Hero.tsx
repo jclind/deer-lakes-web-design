@@ -3,6 +3,8 @@ import styles from './Hero.module.scss'
 const Hero = () => {
   return (
     <div className={styles.hero}>
+      {/* !! ADD MOUNTAINS TO HERO */}
+
       <div className='page__inner'>
         <h1 className='page-title'>About Us</h1>
         <p className='page-paragraph'>

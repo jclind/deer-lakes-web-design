@@ -1,0 +1,21 @@
+@use '../../../../styles/vars' as *;
+
+.web_design_importance {
+  padding: $gap-xlarge 0;
+  h1 {
+    text-align: start;
+  }
+
+  .content {
+    .web_design_info {
+      display: flex;
+      flex-direction: column;
+      gap: $gap-large;
+      margin-top: $gap-large;
+
+      .info_title {
+        margin-bottom: $gap-regular;
+      }
+    }
+  }
+}

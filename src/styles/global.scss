@@ -236,6 +236,12 @@ button,
   color: $primary-background;
 }
 
+.tertiary-header {
+  font-size: $fs-medium;
+  font-weight: 700;
+  color: $secondary-text;
+}
+
 // Card Styles
 .card {
   background-color: $card-background;

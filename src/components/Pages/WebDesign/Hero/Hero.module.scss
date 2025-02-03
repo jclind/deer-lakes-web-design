@@ -1,0 +1,31 @@
+@use '../../../../styles/vars' as *;
+
+.hero {
+  position: relative;
+  width: 100%;
+  background-color: $primary-accent;
+  padding-top: $gap-xlarge;
+  color: $primary-background;
+
+  .mountains_image {
+    background-image: url('/images/hero_mountains_light.svg');
+    background-size: 100% 50px;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 100%;
+    background-color: $primary-background;
+
+    @media (min-width: $breakpoint-md) {
+      height: 75px;
+      background-size: 100% 75px;
+    }
+    @media (min-width: $breakpoint-lg) {
+      height: 90px;
+      background-size: 100% 90px;
+    }
+    @media (min-width: $breakpoint-xl) {
+      height: 120px;
+      background-size: 100% 120px;
+    }
+  }
+}
