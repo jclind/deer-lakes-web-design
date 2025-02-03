@@ -4,13 +4,22 @@ import '../styles/global.scss';
 import { Hero } from '../components/Pages/About/Hero';
 import { AboutUs } from '../components/Pages/About/AboutUs';
 import { AboutMe } from '../components/Pages/About/AboutMe';
+import MountainsHero from '../components/Common/MountainsHero/MountainsHero';
 import MountainsFooter from '../components/Common/MountainsFooter/MountainsFooter';
 ---
 
+
 <Layout>
-  <Hero />
+  <!-- <Hero /> -->
+  <MountainsHero title='About Us' isDark>
+    <p class='section-paragraph'>
+      At Deer Lakes Web Design, our mission is to make professional, high-quality web design accessible to every small business. We believe that having a great website should be simple, affordable, and stress-free. Our goal is to create and grow long term relationships with our clients.
+    </p>
+  </MountainsHero>
   <AboutUs />
   <AboutMe />
   <MountainsFooter />
+
+
 
 </Layout>
