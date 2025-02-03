@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from './InfoAndForm.module.scss'
 
-const Form = () => {
+const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -79,7 +79,6 @@ const Form = () => {
       <div data-netlify-recaptcha='true'></div>
 
       <button type='submit'>Send Message</button>
-
       {status === 'success' && (
         <p>✅ Your message has been sent successfully!</p>
       )}
@@ -90,4 +89,4 @@ const Form = () => {
   )
 }
 
-export default Form
+export default ContactForm

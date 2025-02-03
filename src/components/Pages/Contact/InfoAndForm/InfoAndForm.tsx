@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './InfoAndForm.module.scss'
 import { contactInfo } from './contactInfo'
+import ContactForm from './ContactForm'
 const InfoAndForm = () => {
   return (
     <div className={styles.info_and_form}>
@@ -30,7 +31,9 @@ const InfoAndForm = () => {
               ))}
             </div>
           </div>
-          <div className={`${styles.form__container} card`}></div>
+          <div className={`${styles.form__container} card`}>
+            <ContactForm />
+          </div>
         </div>
       </div>
     </div>
