@@ -1,12 +1,11 @@
-@use '../../../../styles/vars' as *;
+@use '../../../styles/vars' as *;
 
-.hero {
+.mountains_hero {
   position: relative;
   width: 100%;
   background-color: $primary-accent;
   padding-top: $gap-xlarge;
   color: $primary-background;
-
   .mountains_image {
     background-image: url('/images/hero_mountains_light.svg');
     background-size: 100% 50px;
