@@ -4,9 +4,16 @@ import { info } from './info'
 const WebDesignImportance = () => {
   return (
     <div className={styles.web_design_importance}>
-      <div className='page__inner'>
+      <div className={`${styles.page__inner} page__inner`}>
+        <div className={styles.image}>
+          <img
+            src='/images/jesse_lind_headshot.jpg'
+            alt='Jesse Lind Headshot'
+          />
+        </div>
         <div className={styles.content}>
           <h1 className='page-title'>The Importance Of Good Web Design</h1>
+
           <p className={styles.description}>
             At Deer Lakes Web Designs, we take a handcrafted approach to
             building websites—every line of code is written by us, giving me
