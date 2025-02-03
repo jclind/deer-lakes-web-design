@@ -46,7 +46,6 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-      <div className={styles.footer_mountains}></div>
     </div>
   )
 }

@@ -1,0 +1,24 @@
+@use '../../../styles/vars' as *;
+
+.footer_mountains {
+  background-image: url('/images/footer_mountains.svg');
+  background-size: 100% 125px;
+  background-repeat: no-repeat;
+  height: 125px;
+  width: 100%;
+
+  margin-top: $gap-xlarge;
+
+  @media (min-width: $breakpoint-lg) {
+    height: 150px;
+    background-size: 100% 150px;
+  }
+  @media (min-width: $breakpoint-md) {
+    height: 175px;
+    background-size: 100% 175px;
+  }
+  @media (min-width: $breakpoint-lg) {
+    height: 200px;
+    background-size: 100% 200px;
+  }
+}
