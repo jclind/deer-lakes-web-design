@@ -224,12 +224,27 @@ button,
   font-size: $fs-large;
   font-weight: 800;
   text-align: center;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: $fs-xlarge;
+  }
+}
+.section-subtitle {
+  font-size: $fs-regular;
+  font-weight: 700;
+  text-align: center;
+  color: $secondary-text;
+  @media (min-width: $breakpoint-md) {
+    font-size: $fs-large;
+  }
 }
 .section-paragraph {
   font-size: $fs-regular;
+
   font-weight: 500;
   text-align: center;
   color: $secondary-text;
+
   letter-spacing: -0.5px;
 }
 .text-inverted {
@@ -238,11 +253,6 @@ button,
 
 .secondary-header {
   font-size: $fs-medium;
-  font-weight: 700;
-  color: $secondary-text;
-}
-.tertiary-header {
-  font-size: $fs-regular;
   font-weight: 700;
   color: $secondary-text;
 }

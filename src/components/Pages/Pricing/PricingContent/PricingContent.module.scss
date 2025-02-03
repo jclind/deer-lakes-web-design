@@ -1,7 +1,8 @@
 @use '../../../../styles/vars' as *;
 
 .pricing_content {
-  margin: $gap-xlarge 0;
+  margin-top: $gap-xlarge;
+  margin-bottom: $gap-xxlarge;
   .heading {
     margin-bottom: $gap-large;
     h1,

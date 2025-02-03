@@ -7,11 +7,10 @@ const PricingContent = () => {
       <div className='page__inner'>
         <div className={styles.heading}>
           <h1 className='section-title'>Our Pricing</h1>
-          <h2 className='tertiary-header'>
+          <h2 className='section-subtitle'>
             Select The Best Plan For Your Needs
           </h2>
         </div>
-
         <PricingCardContainer />
       </div>
     </div>
