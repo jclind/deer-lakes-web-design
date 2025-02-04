@@ -17,11 +17,14 @@ const Hero = () => {
           </p>
           <div className={styles.buttons}>
             <ButtonLink text='Get Started' link='/contact' color='tertiary' />
-            <ButtonLink text='Learn More' link='/about' color='secondary' />
+            <ButtonLink text='About Us' link='/about' color='secondary' />
           </div>
         </div>
         <div className={styles.image}>
-          <img src='/images/DLWD_mockup_landing_page.jpg' alt='Design mockup' />
+          <img
+            src='/images/DLWD_mockup_landing_page_400.webp'
+            alt='Design mockup'
+          />
         </div>
       </div>
       <div className={styles.waves}></div>

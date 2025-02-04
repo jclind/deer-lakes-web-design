@@ -47,7 +47,11 @@ const AboutUs = () => {
                 ‘Web Design’ page.
               </p>
             </div>
-            <ButtonLink text='Learn More' link='/web-design' size='large' />
+            <ButtonLink
+              text='Learn About Web Design'
+              link='/web-design'
+              size='large'
+            />
           </div>
         </div>
       </div>

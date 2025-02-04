@@ -5,9 +5,10 @@ import { Footer } from '../components/Layout/Footer';
 // You can also receive props in your layout
 interface Props {
 	title?: string;
+	description?: string;
 }
 
-const { title = "Deer Lakes Web Design" } = Astro.props;
+const { title = "Deer Lakes Web Design", description = "An elegant and effective online presence doesn't have to break the bank. Get a 100% hand coded website for your business starting at $150/mo." } = Astro.props;
 ---
 
 <!doctype html>
@@ -17,12 +18,23 @@ const { title = "Deer Lakes Web Design" } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>{`${title} | Deer Lakes Web Design`}</title>
+		<meta name="description" content={description || "Deer Lakes Web Design is a web design company that specializes in creating beautiful, responsive websites for small businesses."} />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={Astro.url.href} />
+		<meta property="og:image" content="/images/DLWD_logo_small.webp" />
+		<meta property="og:site_name" content="Deer Lakes Web Design" />
+		
+		<link rel="canonical" href={Astro.url.href} />
+
+
+
+
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" 
 			rel="preload" as="style"
-    	onload="this.onload=null;this.rel='stylesheet'" />
+			onload="this.onload=null;this.rel='stylesheet'" />
 		<noscript>
 			<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" 
 				rel="stylesheet" />
