@@ -22,10 +22,16 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.image}>
-          <img
-            src='/images/DLWD_mockup_landing_page_400.webp'
-            alt='Design mockup'
-          />
+          <picture>
+            <source
+              srcSet='/images/DLWD_mockup_landing_page_200.webp'
+              media='(max-width: 768px)'
+            />
+            <img
+              src='/images/DLWD_mockup_landing_page_400.webp'
+              alt='Design mockup'
+            />
+          </picture>
         </div>
       </div>
       <div className={styles.waves}>
