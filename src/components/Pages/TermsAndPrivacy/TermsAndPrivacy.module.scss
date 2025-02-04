@@ -1,0 +1,75 @@
+@use '../../../styles/_vars.scss' as *;
+
+.privacy_policy {
+  background-color: $primary-background;
+  padding: $gap-large;
+
+  .content {
+    max-width: 600px;
+    .last_updated {
+      margin-bottom: $gap-small;
+      font-size: $fs-medium;
+      color: $secondary-text;
+      margin-bottom: $gap-large;
+    }
+    p {
+      margin-bottom: $gap-regular;
+    }
+
+    h1,
+    h2 {
+      text-align: start;
+    }
+    h1 {
+      font-size: $fs-xxlarge;
+    }
+    h2 {
+      margin-top: $gap-xlarge;
+    }
+  }
+}
+
+.terms_of_service,
+.privacy_policy {
+  background-color: $primary-background;
+  padding: $gap-large;
+
+  .content {
+    max-width: 600px;
+
+    .title {
+      font-size: $fs-large;
+    }
+    h2 {
+      font-size: $fs-medium;
+      width: 100%;
+      text-align: start;
+      margin-bottom: $gap-medium;
+    }
+    h3,
+    .last_updated {
+      font-size: $fs-regular;
+      text-align: start;
+      margin-top: $gap-medium;
+    }
+
+    section {
+      padding-top: $gap-xlarge;
+    }
+    p {
+      margin-top: $gap-medium;
+    }
+
+    a {
+      color: $primary-accent;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: $gap-regular;
+      li {
+      }
+    }
+  }
+}
