@@ -6,7 +6,10 @@ const CallToAction = () => {
     <div className={styles.call_to_action}>
       <div className={`${styles.card} card page__inner`}>
         <div className={styles.image}>
-          <img src='/images/DLWD_icon.png' alt='Deer Lakes Web Design Icon' />
+          <img
+            src='/images/DLWD_icon_200.webp'
+            alt='Deer Lakes Web Design Icon'
+          />
         </div>
         <div className={styles.content}>
           <h1 className='section-title'>Ready To Get Started?</h1>

@@ -9,7 +9,7 @@ const BusinessModelInfo = () => {
       <div className={`page__inner ${styles.page__inner}`}>
         <div className={styles.headshot_container}>
           <div className={styles.headshot_image}>
-            <img src='/images/jesse_lind_headshot.jpg' alt='headshot' />
+            <img src='/images/jesse_lind_headshot_500.webp' alt='headshot' />
           </div>
           <span className={styles.headshot_title}>
             Jesse Lind - Owner & Developer

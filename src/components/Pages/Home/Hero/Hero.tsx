@@ -21,7 +21,10 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.image}>
-          <img src='/images/DLWD_mockup_landing_page.jpg' alt='Design mockup' />
+          <img
+            src='/images/DLWD_mockup_landing_page_400.webp'
+            alt='Design mockup'
+          />
         </div>
       </div>
       <div className={styles.waves}></div>

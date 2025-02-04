@@ -14,7 +14,10 @@ const Navbar = ({ currentPath }: NavbarProps) => {
     <div className={styles.navbar}>
       <div className={styles.inner}>
         <a href='/' className={styles.logo}>
-          <img src='/images/DLWD_logo_small.png' alt='Deer Lakes Web Designs' />
+          <img
+            src='/images/DLWD_logo_small.webp'
+            alt='Deer Lakes Web Designs'
+          />
         </a>
         <div className={styles.hamburger}>
           <Hamburger toggled={isOpen} toggle={setIsOpen} />

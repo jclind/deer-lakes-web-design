@@ -7,7 +7,7 @@ const WebDesignImportance = () => {
       <div className={`${styles.page__inner} page__inner`}>
         <div className={styles.image}>
           <img
-            src='/images/jesse_lind_headshot.jpg'
+            src='/images/jesse_lind_headshot_500.webp'
             alt='Jesse Lind Headshot'
           />
         </div>

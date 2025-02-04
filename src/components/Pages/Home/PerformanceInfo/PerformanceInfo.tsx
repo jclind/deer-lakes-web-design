@@ -12,13 +12,13 @@ const PerformanceInfo = () => {
           <div className={`${styles.images_container} ${styles.box_2}`}>
             <div className={styles.chart_image}>
               <img
-                src='/images/DLWD_performance_stats_chart.jpg'
+                src='/images/DLWD_performance_stats_chart_380.webp'
                 alt='Performance Info'
               />
             </div>
             <div className={styles.times_image}>
               <img
-                src='/images/DLWD_performance_stats_times.jpg'
+                src='/images/DLWD_performance_stats_times_380.webp'
                 alt='Performance Info'
               />
             </div>

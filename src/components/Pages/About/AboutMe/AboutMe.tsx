@@ -8,7 +8,7 @@ const AboutMe = () => {
         <h1 className='section-title'>About Me</h1>
         <div className={styles.container}>
           <div className={styles.image}>
-            <img src='/images/about_me_headshot.png' alt='' />
+            <img src='/images/about_me_headshot.webp' alt='' />
           </div>
           <div className={styles.content}>
             <div className={styles.text}>

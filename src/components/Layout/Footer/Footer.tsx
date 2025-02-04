@@ -11,7 +11,7 @@ const Footer = () => {
           <div className={styles.links__container}>
             <div className={styles.image}>
               <img
-                src='/images/DLWD_logo_inverted.png'
+                src='/images/DLWD_logo_inverted-185.webp'
                 alt='Deer Lakes Web Design Icon'
               />
             </div>
