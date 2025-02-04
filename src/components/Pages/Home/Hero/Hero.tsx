@@ -17,7 +17,7 @@ const Hero = () => {
           </p>
           <div className={styles.buttons}>
             <ButtonLink text='Get Started' link='/contact' color='tertiary' />
-            <ButtonLink text='Learn More' link='/about' color='secondary' />
+            <ButtonLink text='About Us' link='/about' color='secondary' />
           </div>
         </div>
         <div className={styles.image}>
