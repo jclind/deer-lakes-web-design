@@ -9,6 +9,7 @@ const CallToAction = () => {
           <img
             src='/images/DLWD_icon_200.webp'
             alt='Deer Lakes Web Design Icon'
+            loading='lazy'
           />
         </div>
         <div className={styles.content}>

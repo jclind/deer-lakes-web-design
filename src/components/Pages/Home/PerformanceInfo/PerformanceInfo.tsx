@@ -14,12 +14,14 @@ const PerformanceInfo = () => {
               <img
                 src='/images/DLWD_performance_stats_chart_380.webp'
                 alt='Performance Info'
+                loading='lazy'
               />
             </div>
             <div className={styles.times_image}>
               <img
                 src='/images/DLWD_performance_stats_times_380.webp'
                 alt='Performance Info'
+                loading='lazy'
               />
             </div>
           </div>

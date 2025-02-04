@@ -9,6 +9,7 @@ const WebDesignImportance = () => {
           <img
             src='/images/jesse_lind_headshot_500.webp'
             alt='Jesse Lind Headshot'
+            loading='lazy'
           />
         </div>
         <div className={styles.content}>
