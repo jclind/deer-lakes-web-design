@@ -1,8 +1,9 @@
 @use '../../../styles/vars' as *;
 
 .button_link {
-  min-width: fit-content;
-  width: 140px;
+  min-width: 140px;
+  width: fit-content !important;
+  padding: 0 $gap-small;
   height: 40px;
   white-space: nowrap;
   font-size: $fs-small;
