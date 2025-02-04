@@ -28,12 +28,17 @@ $navbar-height-mobile: 70px;
       height: 60px;
       width: 185px;
       img {
-        height: 100%;
         object-fit: contain;
+        height: 60px;
+        width: 185px;
       }
       @media (max-width: $breakpoint-lg) {
         height: 50px;
         width: 155px;
+        img {
+          height: 50px;
+          width: 155px;
+        }
       }
     }
     .links {

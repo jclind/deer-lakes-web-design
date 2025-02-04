@@ -38,9 +38,11 @@
     }
     .image {
       width: 200px;
+      height: 143px;
       img {
         object-fit: contain;
-        width: 100%;
+        width: 200px;
+        height: 143px;
       }
     }
     @media (min-width: $breakpoint-lg) {
@@ -61,6 +63,11 @@
       }
       .image {
         width: 400px;
+        height: 287px;
+        img {
+          width: 400px;
+          height: 287px;
+        }
       }
     }
   }
