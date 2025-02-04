@@ -10,7 +10,9 @@ const TermsOfService = () => {
             <h1>Terms Of Service</h1>
           </div>
 
-          <h3 className='section-subtitle'>Last updated February 04, 2025</h3>
+          <div className={styles.last_updated}>
+            Last updated February 04, 2025
+          </div>
           <section>
             <h2 className='section-title'>AGREEMENT TO OUR LEGAL TERMS</h2>
             <div className='text'>
