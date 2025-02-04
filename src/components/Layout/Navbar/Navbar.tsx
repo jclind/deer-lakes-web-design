@@ -20,7 +20,7 @@ const Navbar = ({ currentPath }: NavbarProps) => {
           />
         </a>
         <div className={styles.hamburger}>
-          <Hamburger toggled={isOpen} toggle={setIsOpen} />
+          <Hamburger toggled={isOpen} toggle={setIsOpen} label='Menu' />
         </div>
         <nav className={`${styles.links} ${isOpen ? styles.open : ''}`}>
           {navLinks.map(link => (
