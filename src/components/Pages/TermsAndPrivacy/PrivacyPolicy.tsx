@@ -1,5 +1,15 @@
 import React from 'react'
 import styles from './TermsAndPrivacy.module.scss'
+import {
+  EMAIL_ADDRESS,
+  CITY,
+  COUNTRY,
+  STATE,
+  ZIP_CODE,
+  ADDRESS,
+  WEBSITE_URL,
+  LEGAL_NAME,
+} from './legalInfo'
 const PrivacyPolicy = () => {
   const personalInformationCollectedData = [
     {
@@ -73,7 +83,6 @@ const PrivacyPolicy = () => {
       collected: 'NO',
     },
   ]
-
   return (
     <div className={styles.privacy_policy}>
       <div className='page__inner'>
@@ -88,7 +97,7 @@ const PrivacyPolicy = () => {
           <section>
             <div className='text'>
               <p>
-                This Privacy Notice for Deer Lakes Web Design ("
+                This Privacy Notice for {LEGAL_NAME} ("
                 <strong>we</strong>," "<strong>us</strong>," or "
                 <strong>our</strong>"), describes how and why we might access,
                 collect, store, use, and/or share ("<strong>process</strong>")
@@ -97,11 +106,8 @@ const PrivacyPolicy = () => {
               </p>
               <ul>
                 <li>
-                  Visit our website at{' '}
-                  <a href='https://deerlakeswebdesigns.netlify.app'>
-                    https://deerlakeswebdesigns.netlify.app
-                  </a>
-                  , or any website of ours that links to this Privacy Notice
+                  Visit our website at <a href={WEBSITE_URL}>{WEBSITE_URL}</a>,
+                  or any website of ours that links to this Privacy Notice
                 </li>
                 <li>
                   Engage with us in other related ways, including any sales,
@@ -114,11 +120,11 @@ const PrivacyPolicy = () => {
                 We are responsible for making decisions about how your personal
                 information is processed. If you do not agree with our policies
                 and practices, please do not use our Services. If you still have
-                any questions or concerns, please contact us at
-                jesselindcs@gmail.com.
+                any questions or concerns, please contact us at {EMAIL_ADDRESS}.
               </p>
             </div>
           </section>
+
           <section>
             <h2 className='section-title'>SUMMARY OF KEY POINTS</h2>
             <div className='text'>
@@ -630,7 +636,7 @@ const PrivacyPolicy = () => {
                 account and take reasonable measures to promptly delete such
                 data from our records. If you become aware of any data we may
                 have collected from children under age 18, please contact us at
-                jesselindcs@gmail.com.
+                {EMAIL_ADDRESS}.
               </p>
             </div>
           </section>
@@ -661,7 +667,7 @@ const PrivacyPolicy = () => {
               </p>
               <p>
                 If you have questions or comments about your privacy rights, you
-                may email us at jesselindcs@gmail.com.
+                may email us at {EMAIL_ADDRESS}.
               </p>
             </div>
           </section>
@@ -896,8 +902,8 @@ const PrivacyPolicy = () => {
                 <a href='https://app.termly.io/notify/c19d9e16-c832-4131-a286-87f1d6cd8a70'>
                   data subject access request
                 </a>
-                , by emailing us at jesselindcs@gmail.com, or by referring to
-                the contact details at the bottom of this document.
+                , by emailing us at {EMAIL_ADDRESS}, or by referring to the
+                contact details at the bottom of this document.
               </p>
               <p>
                 Under certain US state data protection laws, you can designate
@@ -929,9 +935,9 @@ const PrivacyPolicy = () => {
               <p>
                 Under certain US state data protection laws, if we decline to
                 take action regarding your request, you may appeal our decision
-                by emailing us at jesselindcs@gmail.com. We will inform you in
-                writing of any action taken or not taken in response to the
-                appeal, including a written explanation of the reasons for the
+                by emailing us at {EMAIL_ADDRESS}. We will inform you in writing
+                of any action taken or not taken in response to the appeal,
+                including a written explanation of the reasons for the
                 decisions. If your appeal is denied, you may submit a complaint
                 to your state attorney general.
               </p>
@@ -983,16 +989,16 @@ const PrivacyPolicy = () => {
             <div className='text'>
               <p>
                 If you have questions or comments about this notice, you may
-                email us at jesselindcs@gmail.com or contact us by post at:
+                email us at {EMAIL_ADDRESS} or contact us by post at:
               </p>
               <p>
-                Deer Lakes Web Design
+                {LEGAL_NAME}
                 <br />
-                106 Oakwood Cir, Gibsonia, PA 15044, USA
+                {ADDRESS},
                 <br />
-                Gibsonia, PA 15044
+                {CITY}, {STATE}, {ZIP_CODE}
                 <br />
-                United States
+                {COUNTRY}
               </p>
             </div>
           </section>
