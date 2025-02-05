@@ -1,4 +1,5 @@
 export const EMAIL_ADDRESS = 'jesselindcs@gmail.com'
+export const PHONE_NUMBER = '+17247130582'
 export const ADDRESS = '106 Oakwood Cir'
 export const CITY = 'Gibsonia'
 export const STATE = 'PA'

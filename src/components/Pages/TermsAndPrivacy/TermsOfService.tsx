@@ -1,5 +1,17 @@
 import React from 'react'
 import styles from './TermsAndPrivacy.module.scss'
+import {
+  EMAIL_ADDRESS,
+  CITY,
+  COUNTRY,
+  STATE,
+  ZIP_CODE,
+  ADDRESS,
+  WEBSITE_URL,
+  LEGAL_NAME,
+  FULL_ADDRESS,
+  PHONE_NUMBER,
+} from './legalInfo'
 
 const TermsOfService = () => {
   return (
@@ -17,36 +29,32 @@ const TermsOfService = () => {
             <h2 className='section-title'>AGREEMENT TO OUR LEGAL TERMS</h2>
             <div className='text'>
               <p>
-                We are Deer Lakes Web Design ("<strong>Company</strong>," "
+                We are {LEGAL_NAME} ("<strong>Company</strong>," "
                 <strong>we</strong>," "<strong>us</strong>," "
                 <strong>our</strong>"), a company registered in Pennsylvania,
-                United States at 106 Oakwood Cir, Gibsonia, PA 15044.
+                {FULL_ADDRESS}.
               </p>
 
               <p>
-                We operate the website{' '}
-                <a href='https://deerlakeswebdesigns.com'>
-                  https://deerlakeswebdesigns.com
-                </a>{' '}
+                We operate the website <a href={WEBSITE_URL}>{WEBSITE_URL}</a>{' '}
                 (the "Site"), as well as any other related products and services
                 that refer or link to these legal terms (the "
                 <strong>Legal Terms</strong>") (collectively, the "
                 <strong>Services</strong>").
               </p>
               <p>
-                You can contact us by phone at (+1)7247130582, email at
-                jesselindcs@gmail.com, or by mail to 106 Oakwood Cir, Gibsonia,
-                PA 15044, United States.
+                You can contact us by phone at {PHONE_NUMBER}, email at
+                {EMAIL_ADDRESS}, or by mail to {FULL_ADDRESS}.
               </p>
               <p>
                 These Legal Terms constitute a legally binding agreement made
                 between you, whether personally or on behalf of an entity
-                ("you"), and Deer Lakes Web Design, concerning your access to
-                and use of the Services. You agree that by accessing the
-                Services, you have read, understood, and agreed to be bound by
-                all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE
-                LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE
-                SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.
+                ("you"), and {LEGAL_NAME}, concerning your access to and use of
+                the Services. You agree that by accessing the Services, you have
+                read, understood, and agreed to be bound by all of these Legal
+                Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN
+                YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU
+                MUST DISCONTINUE USE IMMEDIATELY.
               </p>
               <p>
                 Supplemental terms and conditions or documents that may be
@@ -226,8 +234,8 @@ const TermsOfService = () => {
               <p>
                 If you wish to make any use of the Services, Content, or Marks
                 other than as set out in this section or elsewhere in our Legal
-                Terms, please address your request to: jesselindcs@gmail.com. If
-                we ever grant you the permission to post, reproduce, or publicly
+                Terms, please address your request to: {EMAIL_ADDRESS}. If we
+                ever grant you the permission to post, reproduce, or publicly
                 display any part of our Services or Content, you must identify
                 us as the owners or licensors of the Services, Content, or Marks
                 and ensure that any copyright or proprietary notice appears or
@@ -597,16 +605,13 @@ const TermsOfService = () => {
             <div className='text'>
               <p>
                 We care about data privacy and security. Please review our
-                Privacy Policy:{' '}
-                <a href='https://deerlakeswebdesigns.com/privacy-policy'>
-                  https://deerlakeswebdesigns.com/privacy-policy
-                </a>
-                . By using the Services, you agree to be bound by our Privacy
-                Policy, which is incorporated into these Legal Terms. Please be
-                advised the Services are hosted in the United States. If you
-                access the Services from any other region of the world with laws
-                or other requirements governing personal data collection, use,
-                or disclosure that differ from applicable laws in the United
+                Privacy Policy: <a href={WEBSITE_URL}>{WEBSITE_URL}</a>. By
+                using the Services, you agree to be bound by our Privacy Policy,
+                which is incorporated into these Legal Terms. Please be advised
+                the Services are hosted in the United States. If you access the
+                Services from any other region of the world with laws or other
+                requirements governing personal data collection, use, or
+                disclosure that differ from applicable laws in the United
                 States, then through your continued use of the Services, you are
                 transferring your data to the United States, and you expressly
                 consent to have your data transferred to and processed in the
@@ -989,17 +994,17 @@ const TermsOfService = () => {
               </p>
               <p>
                 <strong>
-                  Deer Lakes Web Design
+                  {LEGAL_NAME}
                   <br />
-                  106 Oakwood Cir
+                  {ADDRESS}
                   <br />
-                  Gibsonia, PA 15044
+                  {CITY}, {STATE}, {ZIP_CODE}
                   <br />
-                  United States
+                  {COUNTRY}
                   <br />
-                  Phone: (+1)7247130582
+                  Phone: {PHONE_NUMBER}
                   <br />
-                  jesselindcs@gmail.com
+                  {EMAIL_ADDRESS}
                 </strong>
               </p>
             </div>
