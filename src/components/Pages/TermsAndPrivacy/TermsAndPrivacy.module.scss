@@ -1,44 +1,26 @@
 @use '../../../styles/_vars.scss' as *;
 
-.privacy_policy {
-  background-color: $primary-background;
-  padding: $gap-large;
-
-  .content {
-    max-width: 600px;
-    .last_updated {
-      margin-bottom: $gap-small;
-      font-size: $fs-medium;
-      color: $secondary-text;
-      margin-bottom: $gap-large;
-    }
-    p {
-      margin-bottom: $gap-regular;
-    }
-
-    h1,
-    h2 {
-      text-align: start;
-    }
-    h1 {
-      font-size: $fs-xxlarge;
-    }
-    h2 {
-      margin-top: $gap-xlarge;
-    }
-  }
-}
-
 .terms_of_service,
 .privacy_policy {
   background-color: $primary-background;
   padding: $gap-large;
+  margin-bottom: $gap-large;
 
   .content {
     max-width: 600px;
 
     .title {
       font-size: $fs-large;
+    }
+    .in_short {
+      font-size: $fs-regular;
+      font-weight: 400;
+      font-style: italic;
+      &::before {
+        content: 'In short:';
+        font-weight: 400;
+        margin-right: $gap-small;
+      }
     }
     h2 {
       font-size: $fs-medium;
@@ -51,6 +33,8 @@
       font-size: $fs-regular;
       text-align: start;
       margin-top: $gap-medium;
+      font-weight: 700;
+      color: $secondary-text;
     }
 
     section {
