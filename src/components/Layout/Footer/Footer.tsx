@@ -32,7 +32,15 @@ const Footer = () => {
                 <div className={styles.icon__container}>
                   <item.icon className={styles.icon} />
                 </div>
-                <span>{item.text}</span>
+                <span
+                  style={{
+                    color: 'inherit',
+                    textDecoration: 'none',
+                    WebkitTextFillColor: 'inherit',
+                  }}
+                >
+                  {item.text}
+                </span>
               </div>
             ))}
           </div>
