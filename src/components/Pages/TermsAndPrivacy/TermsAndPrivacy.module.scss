@@ -1,0 +1,59 @@
+@use '../../../styles/_vars.scss' as *;
+
+.terms_of_service,
+.privacy_policy {
+  background-color: $primary-background;
+  padding: $gap-large;
+  margin-bottom: $gap-large;
+
+  .content {
+    max-width: 600px;
+
+    .title {
+      font-size: $fs-large;
+    }
+    .in_short {
+      font-size: $fs-regular;
+      font-weight: 400;
+      font-style: italic;
+      &::before {
+        content: 'In short:';
+        font-weight: 400;
+        margin-right: $gap-small;
+      }
+    }
+    h2 {
+      font-size: $fs-medium;
+      width: 100%;
+      text-align: start;
+      margin-bottom: $gap-medium;
+    }
+    h3,
+    .last_updated {
+      font-size: $fs-regular;
+      text-align: start;
+      margin-top: $gap-medium;
+      font-weight: 700;
+      color: $secondary-text;
+    }
+
+    section {
+      padding-top: $gap-xlarge;
+    }
+    p {
+      margin-top: $gap-medium;
+    }
+
+    a {
+      color: $primary-accent;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: $gap-regular;
+      li {
+      }
+    }
+  }
+}

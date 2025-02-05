@@ -208,6 +208,9 @@ button,
   max-width: $max-width-container;
   width: $max-width-percentage;
 }
+.padding-xlarge {
+  padding: $gap-xlarge 0;
+}
 
 // Sections
 .page-title {
