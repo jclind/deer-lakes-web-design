@@ -31,7 +31,7 @@ const TermsOfService = () => {
               <p>
                 We are {LEGAL_NAME} ("<strong>Company</strong>," "
                 <strong>we</strong>," "<strong>us</strong>," "
-                <strong>our</strong>"), a company registered in Pennsylvania,
+                <strong>our</strong>"), a company registered in Pennsylvania,{' '}
                 {FULL_ADDRESS}.
               </p>
 
