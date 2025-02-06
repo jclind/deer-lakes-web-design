@@ -283,3 +283,8 @@ button,
   width: 100%;
   padding-bottom: 200px;
 }
+
+a[href^='tel'] {
+  color: $primary-text; /* Or any color that contrasts with the background */
+  text-decoration: none; /* Optional: removes underline */
+}

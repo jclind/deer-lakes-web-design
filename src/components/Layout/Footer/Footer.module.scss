@@ -58,6 +58,7 @@
         }
         span {
           align-self: self-end;
+          color: $primary-background;
         }
       }
     }
@@ -107,5 +108,9 @@
       justify-content: space-between;
       width: 100%;
     }
+  }
+
+  a[href^='tel'] {
+    color: $primary-background;
   }
 }

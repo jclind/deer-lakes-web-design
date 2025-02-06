@@ -3,11 +3,13 @@
 .terms_of_service,
 .privacy_policy {
   background-color: $primary-background;
-  padding: $gap-large;
+  padding: $gap-large 0;
   margin-bottom: $gap-large;
+  overflow-x: hidden;
 
   .content {
     max-width: 600px;
+    width: 100%;
 
     .title {
       font-size: $fs-large;
@@ -54,6 +56,13 @@
       gap: $gap-regular;
       li {
       }
+    }
+    a {
+      white-space: pre-wrap; /* CSS3 */
+      white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+      white-space: -pre-wrap; /* Opera 4-6 */
+      white-space: -o-pre-wrap; /* Opera 7 */
+      word-wrap: break-word; /* Internet Explorer 5.5+ */
     }
   }
 }
