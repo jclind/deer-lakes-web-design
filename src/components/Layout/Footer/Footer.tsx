@@ -4,6 +4,7 @@ import { links } from './links'
 import { Divider } from '../../Common/Divider'
 import { contactInfo } from './contactInfo'
 const Footer = () => {
+
   return (
     <footer className={styles.footer}>
       <div className='page__inner'>

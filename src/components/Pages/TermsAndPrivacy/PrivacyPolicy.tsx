@@ -546,15 +546,15 @@ const PrivacyPolicy = () => {
                 <a href='https://myadcenter.google.com/personalizationoff?sasb=true&ref=ad-settings'>
                   Ad Settings
                 </a>{' '}
-                for mobile apps. Other opt out means include
+                for mobile apps. Other opt out means include{' '}
                 <a href='http://optout.networkadvertising.org/'>
                   http://optout.networkadvertising.org/
-                </a>
+                </a>{' '}
                 <a href='http://www.networkadvertising.org/mobile-choice'>
                   http://www.networkadvertising.org/mobile-choice
-                </a>
+                </a>{' '}
                 . For more information on the privacy practices of Google,
-                please visit the
+                please visit the{' '}
                 <a href='https://policies.google.com/privacy'>
                   Google Privacy & Terms page.
                 </a>
@@ -898,7 +898,7 @@ const PrivacyPolicy = () => {
               </ul>
               <h3 className='section-subtitle'>How to Exercise Your Rights</h3>
               <p>
-                To exercise these rights, you can contact us by submitting a
+                To exercise these rights, you can contact us by submitting a{' '}
                 <a href='https://app.termly.io/notify/c19d9e16-c832-4131-a286-87f1d6cd8a70'>
                   data subject access request
                 </a>
