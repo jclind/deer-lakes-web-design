@@ -9,7 +9,7 @@ import {
   ADDRESS,
   WEBSITE_URL,
   LEGAL_NAME,
-} from './legalInfo'
+} from '../../../assets/data/legalInfo'
 const PrivacyPolicy = () => {
   const personalInformationCollectedData = [
     {

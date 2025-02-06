@@ -11,7 +11,7 @@ import {
   LEGAL_NAME,
   FULL_ADDRESS,
   PHONE_NUMBER,
-} from './legalInfo'
+} from '../../../assets/data/legalInfo'
 
 const TermsOfService = () => {
   return (
