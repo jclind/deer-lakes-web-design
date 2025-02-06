@@ -12,7 +12,7 @@ const MountainsHero = ({
   return (
     <div className={`${styles.mountains_hero} ${isDark ? styles.dark : ''}`}>
       <div className={`${styles.page__inner} page__inner`}>
-        <div className='page-title'>{title}</div>
+        <h1 className='page-title'>{title}</h1>
         {children}
       </div>
       {isDark ? (

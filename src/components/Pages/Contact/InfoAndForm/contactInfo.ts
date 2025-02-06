@@ -1,15 +1,15 @@
 import { BsClock, BsPhone, BsEnvelope } from 'react-icons/bs'
-
+import { EMAIL_ADDRESS, PHONE_NUMBER } from '../../../../assets/data/legalInfo'
 export const contactInfo = [
   {
     icon: BsEnvelope,
     title: 'Email Us',
-    subtitle: 'jesselindcs@gmail.com',
+    subtitle: EMAIL_ADDRESS,
   },
   {
     icon: BsPhone,
     title: 'Call Us',
-    subtitle: '+1 724-713-0582',
+    subtitle: PHONE_NUMBER,
   },
 
   {

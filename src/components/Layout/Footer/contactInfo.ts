@@ -1,4 +1,5 @@
 import { BsGeoAlt, BsEnvelope, BsPhone } from 'react-icons/bs'
+import { EMAIL_ADDRESS, PHONE_NUMBER } from '../../../assets/data/legalInfo'
 
 export const contactInfo = [
   {
@@ -7,11 +8,11 @@ export const contactInfo = [
   },
   {
     icon: BsEnvelope,
-    text: 'jesselindcs@gmail.com',
+    text: EMAIL_ADDRESS,
   },
 
   {
     icon: BsPhone,
-    text: '+1 724-713-0582',
+    text: PHONE_NUMBER,
   },
 ]
