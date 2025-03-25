@@ -4,7 +4,7 @@ export const pricing = [
   {
     icon: BsCircleSquare,
     title: 'Lump Sum',
-    price: '$3200',
+    price: '$1900',
     priceSubHeader: '+25/mo hosting',
     theme: 'secondary',
     features: [
@@ -14,7 +14,7 @@ export const pricing = [
       },
       {
         isIncluded: true,
-        feature: '5 Pages Included ($100/additional)',
+        feature: '5 Pages Included (+$100/additional)',
       },
       {
         isIncluded: true,
@@ -48,7 +48,7 @@ export const pricing = [
       },
       {
         isIncluded: true,
-        feature: '5 Pages Included ($100/additional)',
+        feature: '5 Pages Included (+$100/additional)',
       },
       {
         isIncluded: true,
