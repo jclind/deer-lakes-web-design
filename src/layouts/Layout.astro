@@ -9,19 +9,20 @@ interface Props {
 }
 
 const { title = "Deer Lakes Web Design", description = "An elegant and effective online presence doesn't have to break the bank. Get a 100% hand coded website for your business starting at $150/mo." } = Astro.props;
+const GOOGLE_ANALYTICS_ID = 'G-XY34C1C1DR'
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<!-- Google tag (gtag.js) -->
-		<script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-ZXLPTCRBYC"></script>
+		<script type="text/partytown" async src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`}></script>
 		<script type="text/partytown">
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
 
-			gtag('config', 'G-ZXLPTCRBYC');
+			gtag('config', GOOGLE_ANALYTICS_ID);
 		</script>
 
 		<meta charset="UTF-8" />
