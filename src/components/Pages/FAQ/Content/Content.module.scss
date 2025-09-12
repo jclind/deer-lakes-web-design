@@ -49,6 +49,7 @@
         outline: none;
         padding-right: 70px;
         text-align: left;
+        color: $primary-text;
         &:focus-visible {
           outline: 1px solid $primary-text;
           outline-offset: 0px;
