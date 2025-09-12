@@ -1,0 +1,117 @@
+@use '../../../../styles/vars' as *;
+.Content {
+  margin-top: $gap-xlarge;
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: $gap-xlarge;
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+      color: #111;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.5;
+      margin: 0 auto;
+    }
+  }
+  .faqSection {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-medium;
+    margin-bottom: $gap-xxlarge;
+
+    .faqItem {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      position: relative;
+      width: 100%;
+
+      button.faq-question {
+        padding: 1rem $gap-medium;
+        cursor: pointer;
+        font-weight: 600;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        outline: none;
+        padding-right: 70px;
+        text-align: left;
+        &:focus-visible {
+          outline: 1px solid $primary-text;
+          outline-offset: 0px;
+        }
+        // &:active, &: {
+        //   outline: none;
+        // }
+        // &:focus {
+
+        // }
+        .chevron {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          right: $gap-medium;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        &:hover {
+          background-color: #f1f1f1;
+        }
+      }
+
+      .faqAnswer {
+        padding: 0 $gap-medium;
+        font-size: 0.95rem;
+        color: $secondary-text;
+        line-height: 1.5;
+        max-height: 0;
+        height: 100%;
+
+        // overflow: hidden;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+
+        &.open {
+          height: 100%;
+          max-height: 500px; // enough for most answers
+          padding: $gap-medium;
+          border-top: 1px solid $border-color;
+        }
+      }
+    }
+  }
+  .moreInfo {
+    text-align: center;
+    margin-bottom: $gap-xxlarge;
+    p {
+      margin: 0 auto;
+      a {
+        color: $primary-accent;
+        text-decoration: underline;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      // max-width: 400px;
+      margin: 0 auto;
+      margin-top: $gap-large;
+    }
+  }
+}

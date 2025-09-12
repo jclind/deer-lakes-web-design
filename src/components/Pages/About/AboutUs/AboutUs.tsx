@@ -50,7 +50,7 @@ const AboutUs = () => {
             <ButtonLink
               text='Learn About Web Design'
               link='/web-design'
-              size='large'
+              size='medium'
             />
           </div>
         </div>

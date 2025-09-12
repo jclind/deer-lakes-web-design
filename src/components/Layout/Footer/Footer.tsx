@@ -4,7 +4,6 @@ import { links } from './links'
 import { Divider } from '../../Common/Divider'
 import { contactInfo } from './contactInfo'
 const Footer = () => {
-
   return (
     <footer className={styles.footer}>
       <div className='page__inner'>
@@ -12,7 +11,7 @@ const Footer = () => {
           <div className={styles.links__container}>
             <div className={styles.image}>
               <img
-                src='/images/DLWD_logo_inverted_185.webp'
+                src='/images/DLWD_logo_inverted_small.webp'
                 alt='Deer Lakes Web Design Icon'
               />
             </div>
