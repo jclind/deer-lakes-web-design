@@ -1,0 +1,13 @@
+---
+import { MountainsHero } from '../components/Common/MountainsHero';
+import { CallToAction } from '../components/Layout/CallToAction';
+import Content from '../components/Pages/FAQ/Content';
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.scss';
+---
+
+<Layout title='Pricing' description=`Frequently asked questions about the Deer Lakes Web Design workflow and how it's set apart from other web development agencies.`>
+  <MountainsHero title="FAQ'S" />
+  <Content client:load />
+  <CallToAction />
+</Layout>

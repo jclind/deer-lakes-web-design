@@ -1,10 +1,13 @@
 import { BsCircleSquare, BsStar, BsXDiamond } from 'react-icons/bs'
 
+export const LUMP_SUM_PRICE = '$1900'
+export const MONTHLY_SUM_PRICE = '$150/mo'
+
 export const pricing = [
   {
     icon: BsCircleSquare,
     title: 'Lump Sum',
-    price: '$1900',
+    price: LUMP_SUM_PRICE,
     priceSubHeader: '+25/mo hosting',
     theme: 'secondary',
     features: [
@@ -38,7 +41,7 @@ export const pricing = [
   {
     icon: BsStar,
     title: 'Monthly',
-    price: '$150/mo',
+    price: MONTHLY_SUM_PRICE,
     priceSubHeader: 'Per Month',
     theme: 'primary',
     features: [

@@ -24,7 +24,7 @@ export const features = [
     icon: BsSearch,
     title: 'SEO Optimization ',
     description:
-      "Our SEO Optimization will help your business rank higher on search engines like Google. By ensuring fast page speeds and adhering to Google's standards, we boost your site's visibility and make it easier for potential customers to find you.",
+      'Our SEO optimization helps your business rank higher on Google by ensuring fast page speeds and following best practices, making it easier for customers to find you.',
   },
   {
     icon: BsPersonCheck,

@@ -23,6 +23,7 @@ body {
   background-color: #fff;
   width: 100%;
   margin: 0 auto;
+  line-height: $line-height-base;
 }
 
 /* Typography */
@@ -35,11 +36,11 @@ h4,
 h5,
 h6 {
   margin-bottom: $gap-small;
-  line-height: 1.1;
+  // line-height: 1.1;
 }
 
 p {
-  line-height: 1.2;
+  // line-height: 1.2;
   max-width: $max-width-paragraph;
   width: 100%;
 }
