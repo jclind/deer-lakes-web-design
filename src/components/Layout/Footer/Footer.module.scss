@@ -17,10 +17,16 @@
       align-items: flex-start;
       width: 100%;
       .image {
+        display: flex;
+        justify-content: flex-start;
+        // background: red;
         height: 60px;
+        aspect-ratio: 1585 / 512;
         margin-bottom: $gap-large;
 
         img {
+          display: flex;
+          justify-content: flex-start;
           height: 100%;
           width: 100%;
           object-fit: contain;
