@@ -1,5 +1,0 @@
-[[redirects]]
-    from = "/*"
-    to = "https://deerlakeswebdesigns.com/"
-    status = 301
-    force = true
