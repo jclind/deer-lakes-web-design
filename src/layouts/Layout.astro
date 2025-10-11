@@ -32,13 +32,13 @@ const GOOGLE_ANALYTICS_ID = 'G-XY34C1C1DR'
 		<title>{`${title} | Deer Lakes Web Design`}</title>
 		<meta name="description" content={description || "Deer Lakes Web Design is a web design company that specializes in creating beautiful, responsive websites for small businesses."} />
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content={`https://deerlakeswebdesigns.com/`} />
+		<meta property="og:url" content={Astro.url.href} />
 		<meta property="og:image" content="/images/DLWD_logo_small.webp" />
 		<meta property="og:title" content={`Deer Lakes Web Design`} />
 		<meta property="og:site_name" content="Deer Lakes Web Design" />
 		<link rel="sitemap" href="/sitemap-index.xml" />
 		
-		<link rel="canonical" href={'https://deerlakeswebdesigns.com/'} />
+		<link rel="canonical" href={Astro.url.href} />
 
 
 

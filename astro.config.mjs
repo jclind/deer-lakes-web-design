@@ -6,7 +6,7 @@ import react from '@astrojs/react'
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://deerlakeswebdesigns.netlify.app/',
+  site: 'https://deerlakeswebdesigns.com/',
   integrations: [
     react(),
     sitemap(),
