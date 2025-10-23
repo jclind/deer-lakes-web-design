@@ -2,13 +2,14 @@
 // Import your React components
 import { Navbar } from '../components/Layout/Navbar';
 import { Footer } from '../components/Layout/Footer';
+import { MONTHLY_SUM_PRICE } from '../assets/data/pricing';
 // You can also receive props in your layout
 interface Props {
 	title?: string;
 	description?: string;
 }
 
-const { title = "Deer Lakes Web Design", description = "An elegant and effective online presence doesn't have to break the bank. Get a 100% hand coded website for your business starting at $150/mo." } = Astro.props;
+const { title = "Deer Lakes Web Design", description = `An elegant and effective online presence doesn't have to break the bank. Get a 100% hand coded website for your business starting at $${MONTHLY_SUM_PRICE}/mo.` } = Astro.props;
 const GOOGLE_ANALYTICS_ID = 'G-XY34C1C1DR'
 ---
 

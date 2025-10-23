@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Hero.module.scss'
 import { ButtonLink } from '../../../Common/ButtonLink'
 import waves from '../../../../assets/waves.svg'
+import { MONTHLY_SUM_PRICE } from '../../../../assets/data/pricing'
 
 const Hero = () => {
   return (
@@ -13,8 +14,8 @@ const Hero = () => {
           </h1>
           <p className='section-paragraph text-inverted'>
             An elegant and effective online presence doesn't have to break the
-            bank. Get a 100% hand coded website for your business starting at
-            $150/mo.
+            bank. Get a 100% hand coded website for your business starting at $
+            {MONTHLY_SUM_PRICE}/mo.
           </p>
           <div className={styles.buttons}>
             <ButtonLink text='Get Started' link='/contact' color='tertiary' />
