@@ -1,8 +1,9 @@
+import { MONTHLY_SUM_PRICE } from '../../../../assets/data/pricing'
+
 export const features = [
   {
-    title: '0$ Down, $150/mo',
-    description:
-      'Start your website with no upfront cost. Pay just $150 per month, which includes hosting, maintenance, updates, and unmatched support.',
+    title: `0$ Down, $${MONTHLY_SUM_PRICE}/mo`,
+    description: `Start your website with no upfront cost. Pay just $${MONTHLY_SUM_PRICE} per month, which includes hosting, maintenance, updates, and unmatched support.`,
   },
   {
     title: '100% Secure',

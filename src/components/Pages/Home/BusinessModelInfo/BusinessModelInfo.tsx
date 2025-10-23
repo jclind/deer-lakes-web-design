@@ -3,6 +3,7 @@ import styles from './BusinessModelInfo.module.scss'
 import { features } from './features'
 import { BsCheckCircle } from 'react-icons/bs'
 import { ButtonLink } from '../../../Common/ButtonLink'
+import { MONTHLY_SUM_PRICE } from '../../../../assets/data/pricing'
 const BusinessModelInfo = () => {
   return (
     <div className={styles.business_model_info}>
@@ -26,7 +27,7 @@ const BusinessModelInfo = () => {
             Built for Your Small Business
           </h1>
           <p className='section-paragraph'>
-            With our $150/month plan, you'll get{' '}
+            With our ${MONTHLY_SUM_PRICE}/month plan, you'll get{' '}
             <strong>5 standard pages</strong> (just $100 per additional page),
             plus <strong>professional design</strong>,{' '}
             <strong>development</strong>, and <strong>hosting</strong>

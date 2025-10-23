@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './AboutMe.module.scss'
 import { ButtonLink } from '../../../Common/ButtonLink'
+import { MONTHLY_SUM_PRICE } from '../../../../assets/data/pricing'
 const AboutMe = () => {
   return (
     <div className={styles.about_me}>
@@ -33,13 +34,13 @@ const AboutMe = () => {
                 optimized or designed website. It’s to find someone who wants
                 the best for you and your business. That’s why I take a
                 different approach to my development and pricing. With our $0
-                and only $150 per month plan you don’t have to worry about
-                paying thousands of dollars without knowing the quality you will
-                be receiving. At Deer Lakes Web Designs you can be sure that
-                your website will have the best possible performance and a
-                design that works for you. Besides, if we can’t create a design
-                that is suitable for you, you can rest assured with our money
-                back guarantee.
+                and only ${MONTHLY_SUM_PRICE} per month plan you don’t have to
+                worry about paying thousands of dollars without knowing the
+                quality you will be receiving. At Deer Lakes Web Designs you can
+                be sure that your website will have the best possible
+                performance and a design that works for you. Besides, if we
+                can’t create a design that is suitable for you, you can rest
+                assured with our money back guarantee.
               </p>
             </div>
             <ButtonLink text='Contact Us' link='/contact' size='large' />
