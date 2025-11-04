@@ -73,7 +73,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ links }) => {
 }
 
 const Navbar = ({ currentPath }: NavbarProps) => {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
   // Track which top-level menu is hovered/open (for desktop)
   const [openMenu, setOpenMenu] = useState<string | null>(null)
   // Track which submenu inside top-level menu is open (for nested)
