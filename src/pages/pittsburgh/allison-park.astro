@@ -1,0 +1,45 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/global.scss';
+import { CallToAction } from '../../components/Layout/CallToAction';
+import { MountainsHero } from '../../components/Common/MountainsHero';
+import TopLocationsPage from '../../components/Pages/TopLocationsPage';
+
+const locationName = "Allison Park";
+
+const content = [
+      {
+        "title": "Stop Settling for Generic Websites",
+        "description": "Your Allison Park business deserves more than a cookie-cutter WordPress theme. At Deer Lakes Web Designs, we handcraft websites for speed, optimisation, and results—helping your brand stand out online."
+      },
+      {
+        "title": "Built From the Ground Up",
+        "description": "Most page builders add unnecessary code that slows your site and limits flexibility. By hand-coding your Allison Park website, we ensure fast load times, cleaner SEO structure, and better control over design and security."
+      },
+      {
+        "title": "Fast Sites Win",
+        "description": "A slow site loses leads before they ever see your offer. We craft Allison Park websites that are lean and efficient, giving your users a smooth experience and improving your Google rankings."
+      },
+      {
+        "title": "Mobile-First by Design",
+        "description": "We prioritise mobile experience because that’s where most searches start. Your Allison Park website will load fast and function perfectly across all devices, keeping you competitive in local search."
+      },
+      {
+        "title": "SEO-Ready Foundation",
+        "description": "We engineer every Allison Park site with SEO in mind—semantic code, strategic content, and technical structure that help you rank above competitors in local search results."
+      },
+      {
+        "title": "Safe, Secure, and Accessible",
+        "description": "Because we control every line of code, your website avoids common template vulnerabilities. We also build for accessibility so every visitor can easily engage with your business online."
+      }
+    ]
+---
+
+<Layout title=`${locationName} Custom Web Development | Local Business Websites` description={content[0].description}>
+  <MountainsHero title=`${locationName} Web Designer` />
+  <TopLocationsPage locationName={locationName} content={content} />
+  <CallToAction />
+</Layout>
+
+
+

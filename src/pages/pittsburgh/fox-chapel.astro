@@ -1,0 +1,43 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/global.scss';
+import { CallToAction } from '../../components/Layout/CallToAction';
+import { MountainsHero } from '../../components/Common/MountainsHero';
+import TopLocationsPage from '../../components/Pages/TopLocationsPage';
+
+const locationName = "Fox Chapel";
+
+const content = [
+      {
+        "title": "Beyond Templates — Real Web Design for Fox Chapel",
+        "description": "A cookie-cutter site won’t help your business stand out. At Deer Lakes Web Designs, we handcraft high-performing websites for Fox Chapel businesses—built to load fast, rank high, and convert visitors into customers."
+      },
+      {
+        "title": "Why Hand-Coded Sites Win",
+        "description": "Page builders like WordPress may look simple, but they add cluttered code, poor load times, and future maintenance headaches. We write clean, efficient code for every Fox Chapel web project, ensuring precision and longevity."
+      },
+      {
+        "title": "Built for Speed & User Trust",
+        "description": "Every extra second of load time costs you users. We optimize your Fox Chapel site to be lightweight and quick, delivering a smooth experience that builds credibility and boosts conversions."
+      },
+      {
+        "title": "Mobile-First Development",
+        "description": "We design with mobile users in mind from the start. Since Fox Chapel customers are often browsing on phones, your website will meet modern speed and usability standards set by Google."
+      },
+      {
+        "title": "SEO at the Core",
+        "description": "Our web design process includes thorough keyword research, clean site architecture, and strategic content to improve your Fox Chapel business’s visibility in search results."
+      },
+      {
+        "title": "Security & Accessibility",
+        "description": "Your site’s safety matters. By avoiding bloated templates, we eliminate many security risks. And with accessibility best practices built in, your Fox Chapel website will serve every user—and impress search engines too."
+      }
+    ]
+---
+
+<Layout title=`${locationName} Custom Web Development | Local Business Websites` description={content[0].description}>
+  <MountainsHero title=`${locationName} Web Designer` />
+  <TopLocationsPage locationName={locationName} content={content} />
+  <CallToAction />
+</Layout>
+

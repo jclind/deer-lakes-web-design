@@ -1,0 +1,43 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/global.scss';
+import { CallToAction } from '../../components/Layout/CallToAction';
+import { MountainsHero } from '../../components/Common/MountainsHero';
+import TopLocationsPage from '../../components/Pages/TopLocationsPage';
+
+const locationName = "Bellevue";
+
+const content = [
+      {
+        "title": "Your Website Should Do More Than Just Look Good",
+        "description": "In Bellevue, your website is often the first chance to impress customers. We build websites from scratch that don’t just look professional but load quickly and help you get more business."
+      },
+      {
+        "title": "Why Building Your Website by Hand Matters",
+        "description": "Many websites use pre-made templates or page builders that can slow your site down and limit what it can do. We write every line of code ourselves for Bellevue businesses so your site is faster, easier to update, and built to grow."
+      },
+      {
+        "title": "Fast Loading Means Happy Visitors",
+        "description": "People expect websites to open instantly. We make sure your Bellevue site loads quickly on phones, tablets, and desktops so visitors stick around and trust your business."
+      },
+      {
+        "title": "Mobile-Friendly by Design",
+        "description": "Since most people in Bellevue browse on their phones, we design your website to work perfectly on any device. That helps you reach more local customers and rank better on Google."
+      },
+      {
+        "title": "Helping More Customers Find Your Bellevue Business",
+        "description": "A website isn’t helpful if no one finds it. We optimize your site so Google understands what you do and shows your business to people looking for services in Bellevue."
+      },
+      {
+        "title": "Safe and Easy for Everyone to Use",
+        "description": "We build your site with security in mind and make sure it’s easy for all visitors to navigate, including people with disabilities. That’s good for your customers and your search rankings."
+      }
+    ]
+---
+
+<Layout title=`${locationName} Custom Web Development | Local Business Websites` description={content[0].description}>
+  <MountainsHero title=`${locationName} Web Designer` />
+  <TopLocationsPage locationName={locationName} content={content} />
+  <CallToAction />
+</Layout>
+

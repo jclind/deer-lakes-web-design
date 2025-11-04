@@ -1,0 +1,45 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/global.scss';
+import { CallToAction } from '../../components/Layout/CallToAction';
+import { MountainsHero } from '../../components/Common/MountainsHero';
+import TopLocationsPage from '../../components/Pages/TopLocationsPage';
+
+const locationName = "Pittsburgh";
+
+const content = [
+      {
+        "title": "Your Pittsburgh Website Should Impress and Perform",
+        "description": "A great website in Pittsburgh does more than just look good—it loads fast and helps you connect with local customers. We build sites from the ground up to do exactly that."
+      },
+      {
+        "title": "Why Hand-Coding Makes a Difference",
+        "description": "Many Pittsburgh websites rely on templates that can slow them down and limit flexibility. We write every line of code ourselves so your site runs smoothly and is easy to maintain."
+      },
+      {
+        "title": "Fast Websites Keep Visitors Coming Back",
+        "description": "People don’t wait around for slow sites. We make sure your Pittsburgh site loads quickly and gives visitors a smooth experience on any device."
+      },
+      {
+        "title": "Mobile-First Design for Pittsburgh Users",
+        "description": "With most people browsing on their phones, we design your website to look great and work well on all screens, helping you reach more local customers."
+      },
+      {
+        "title": "Helping Pittsburgh Customers Find Your Business",
+        "description": "We optimise your website so Google knows what you offer and shows your Pittsburgh business to people searching nearby."
+      },
+      {
+        "title": "Security and Accessibility You Can Trust",
+        "description": "We build websites that protect your business and are easy for everyone to use, including people with disabilities."
+      }
+    ]
+---
+
+<Layout title=`${locationName} Custom Web Development | Local Business Websites` description={content[0].description}>
+  <MountainsHero title=`${locationName} Web Designer` />
+  <TopLocationsPage locationName={locationName} content={content} />
+  <CallToAction />
+</Layout>
+
+
+

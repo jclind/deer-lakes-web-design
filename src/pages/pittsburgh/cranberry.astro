@@ -1,0 +1,43 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/global.scss';
+import { CallToAction } from '../../components/Layout/CallToAction';
+import { MountainsHero } from '../../components/Common/MountainsHero';
+import TopLocationsPage from '../../components/Pages/TopLocationsPage';
+
+const locationName = "Cranberry";
+
+const content = [
+      {
+        "title": "Your Website Should Work Hard for Your Cranberry Business",
+        "description": "Your website is often your first impression in Cranberry. We create custom websites that load fast, look great, and help you attract more local customers."
+      },
+      {
+        "title": "Why We Write Code By Hand",
+        "description": "Many businesses use templates that make websites slow and hard to maintain. We write every part of your Cranberry website ourselves so it runs smoothly, stays secure, and is easy to update."
+      },
+      {
+        "title": "Speed Matters for Keeping Visitors",
+        "description": "Slow websites lose visitors fast. We make sure your Cranberry site loads quickly on all devices so people stay longer and feel confident about your business."
+      },
+      {
+        "title": "Designed for Mobile Users First",
+        "description": "Most people in Cranberry use their phones to browse. That’s why your website will look and work great on any screen, helping you reach more customers and improve your Google ranking."
+      },
+      {
+        "title": "Helping Cranberry Customers Find You Online",
+        "description": "We optimize your website so Google knows exactly what your Cranberry business offers and can show your site to the right people when they search."
+      },
+      {
+        "title": "Safe, Secure, and Easy to Use",
+        "description": "Security is a priority. We also make your Cranberry website accessible to everyone, so no visitor is left out."
+      }
+    ]
+---
+
+<Layout title=`${locationName} Custom Web Development | Local Business Websites` description={content[0].description}>
+  <MountainsHero title=`${locationName} Web Designer` />
+  <TopLocationsPage locationName={locationName} content={content} />
+  <CallToAction />
+</Layout>
+
