@@ -34,11 +34,11 @@ export const navLinks = [
       },
       {
         title: 'Butler',
-        path: '/locations/butler',
+        path: '/butler',
       },
       {
         title: 'Kittanning',
-        path: '/locations/kittanning',
+        path: '/kittanning',
       },
     ],
   },
