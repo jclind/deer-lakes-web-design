@@ -1,0 +1,45 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/global.scss';
+import { CallToAction } from '../../components/Layout/CallToAction';
+import { MountainsHero } from '../../components/Common/MountainsHero';
+import TopLocationsPage from '../../components/Pages/TopLocationsPage';
+
+const locationName = "Monroeville";
+
+const content = [
+      {
+        "title": "Make Your Monroeville Website Work Harder",
+        "description": "Your website is often the first way customers see your business in Monroeville. We build websites that not only look professional but also load fast and help you get noticed."
+      },
+      {
+        "title": "Why We Build Websites from Scratch",
+        "description": "Many websites use templates that can slow things down and cause problems later. We write clean, custom code for Monroeville businesses so your site is quick, secure, and easy to update."
+      },
+      {
+        "title": "Fast Loading Keeps Visitors Interested",
+        "description": "Slow websites lose visitors fast. We make sure your Monroeville site loads quickly on phones, tablets, and desktops so people stay longer and feel confident about your business."
+      },
+      {
+        "title": "Designed for Mobile Users in Monroeville",
+        "description": "Since most people in Monroeville browse on their phones, your website will be designed to work perfectly on any device, helping you reach more local customers."
+      },
+      {
+        "title": "Helping More Monroeville Customers Find You",
+        "description": "We optimise your website so Google understands what you offer and shows your Monroeville business to people searching nearby."
+      },
+      {
+        "title": "Safe, Secure, and Easy to Use",
+        "description": "We build your website with security in mind and make sure it’s easy for everyone to navigate, including people with disabilities."
+      }
+    ]
+---
+
+<Layout title=`${locationName} Custom Web Development | Local Business Websites` description={content[0].description}>
+  <MountainsHero title=`${locationName} Web Designer` />
+  <TopLocationsPage locationName={locationName} content={content} />
+  <CallToAction />
+</Layout>
+
+
+

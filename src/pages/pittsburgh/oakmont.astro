@@ -1,0 +1,46 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/global.scss';
+import { CallToAction } from '../../components/Layout/CallToAction';
+import { MountainsHero } from '../../components/Common/MountainsHero';
+import TopLocationsPage from '../../components/Pages/TopLocationsPage';
+
+const locationName = "Oakmont";
+
+const content = [
+      {
+        "title": "Make Your Oakmont Website Work Hard for You",
+        "description": "Your website is a key tool for your Oakmont business. We build sites that look great, load fast, and help you attract more customers."
+      },
+      {
+        "title": "Why We Write Custom Code",
+        "description": "Many websites use templates that slow them down and limit updates. We hand-code every Oakmont website to run smoothly, stay secure, and grow with your business."
+      },
+      {
+        "title": "Fast Load Times Keep Visitors Engaged",
+        "description": "People don’t wait for slow sites. We make sure your Oakmont website loads quickly on all devices so visitors stay longer and trust your business."
+      },
+      {
+        "title": "Mobile-First Design for Oakmont",
+        "description": "Most people in Oakmont browse on phones. We design your website to work perfectly on any screen size, helping you reach more local customers."
+      },
+      {
+        "title": "Helping Oakmont Customers Find You Online",
+        "description": "We optimise your site so Google knows what you offer and shows your Oakmont business to the right people."
+      },
+      {
+        "title": "Safe, Secure, and Easy to Use",
+        "description": "We build websites that protect your business and are easy to use for everyone, including people with disabilities."
+      }
+    ]
+---
+
+<Layout title=`${locationName} Custom Web Development | Local Business Websites` description={content[0].description}>
+  <MountainsHero title=`${locationName} Web Designer` />
+  <TopLocationsPage locationName={locationName} content={content} />
+  <CallToAction />
+</Layout>
+
+
+
+

@@ -1,0 +1,46 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/global.scss';
+import { CallToAction } from '../../components/Layout/CallToAction';
+import { MountainsHero } from '../../components/Common/MountainsHero';
+import TopLocationsPage from '../../components/Pages/TopLocationsPage';
+
+const locationName = "Mars";
+
+const content = [
+      {
+        "title": "Your Mars Website Should Stand Out",
+        "description": "A good website helps your Mars business get noticed and grow. We create sites that look professional, load fast, and reach the right customers."
+      },
+      {
+        "title": "Why Hand-Coded Websites Work Better",
+        "description": "Templates can slow your site and cause issues. We write custom code for every Mars website so it runs fast, is secure, and easy to manage."
+      },
+      {
+        "title": "Fast Websites Keep Visitors Coming Back",
+        "description": "Slow sites lose visitors. We make sure your Mars website loads quickly on phones, tablets, and desktops to keep people engaged."
+      },
+      {
+        "title": "Built for Mobile Visitors in Mars",
+        "description": "Most people browse on their phones, so we design your site to work perfectly on all devices to reach more local customers."
+      },
+      {
+        "title": "Helping More Mars Customers Find Your Business",
+        "description": "We optimise your website so Google understands your business and shows it to people searching nearby."
+      },
+      {
+        "title": "Safe and Easy to Use for Everyone",
+        "description": "We build websites that protect your business and are easy for everyone, including those with disabilities, to use."
+      }
+    ]
+---
+
+<Layout title=`${locationName} Custom Web Development | Local Business Websites` description={content[0].description}>
+  <MountainsHero title=`${locationName} Web Designer` />
+  <TopLocationsPage locationName={locationName} content={content} />
+  <CallToAction />
+</Layout>
+
+
+
+

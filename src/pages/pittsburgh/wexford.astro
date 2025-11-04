@@ -1,0 +1,46 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/global.scss';
+import { CallToAction } from '../../components/Layout/CallToAction';
+import { MountainsHero } from '../../components/Common/MountainsHero';
+import TopLocationsPage from '../../components/Pages/TopLocationsPage';
+
+const locationName = "Wexford";
+
+const content = [
+      {
+        "title": "Build a Website That Works for Your Wexford Business",
+        "description": "Your website is often the first chance to make a good impression in Wexford. We create custom websites that load fast, look great, and help you grow."
+      },
+      {
+        "title": "Why Custom Coding Matters",
+        "description": "Many websites use templates that add extra code and slow things down. We hand-code every site for Wexford businesses so your site runs faster and stays secure."
+      },
+      {
+        "title": "Fast Load Times Keep Visitors Engaged",
+        "description": "Visitors leave slow sites quickly. We make sure your Wexford website loads fast on all devices, so customers stick around and trust your business."
+      },
+      {
+        "title": "Mobile-Friendly Design for Wexford",
+        "description": "Since most people browse on phones, your website will be designed to work perfectly on all screen sizes and devices."
+      },
+      {
+        "title": "Helping Wexford Customers Find You Online",
+        "description": "We optimise your site so Google understands your business and shows your website to the right local customers."
+      },
+      {
+        "title": "Secure and Accessible for Everyone",
+        "description": "We build your website with safety in mind and make it easy for everyone to use, including people with disabilities."
+      }
+    ]
+---
+
+<Layout title=`${locationName} Custom Web Development | Local Business Websites` description={content[0].description}>
+  <MountainsHero title=`${locationName} Web Designer` />
+  <TopLocationsPage locationName={locationName} content={content} />
+  <CallToAction />
+</Layout>
+
+
+
+

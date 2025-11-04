@@ -1,0 +1,45 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/global.scss';
+import { CallToAction } from '../../components/Layout/CallToAction';
+import { MountainsHero } from '../../components/Common/MountainsHero';
+import TopLocationsPage from '../../components/Pages/TopLocationsPage';
+
+const locationName = "Gibsonia";
+
+const content = [
+      {
+        "title": "Custom Websites That Outperform Templates",
+        "description": "If your website looks generic or loads slowly, it’s holding your business back. Deer Lakes Web Designs builds fully custom, hand-coded websites for Gibsonia businesses that outperform WordPress and template-based competitors."
+      },
+      {
+        "title": "Why Custom Code Matters",
+        "description": "Templates add clutter. We eliminate it. Our Gibsonia web design approach gives you total control over design, speed, SEO, and security—no plug-ins or unnecessary bloat slowing your site."
+      },
+      {
+        "title": "Performance That Converts",
+        "description": "Your Gibsonia site will be engineered for speed. We optimize every detail so your pages load instantly, keeping visitors engaged and improving both trust and conversion rates."
+      },
+      {
+        "title": "Optimized for Mobile",
+        "description": "Google rewards mobile performance, and so do your customers. We take a mobile-first approach so your Gibsonia web design looks and works flawlessly on phones, tablets, and desktops."
+      },
+      {
+        "title": "SEO That Brings Traffic",
+        "description": "We combine clean code with on-page SEO practices to help your Gibsonia business rank in Google’s local results and draw organic traffic without relying on ads."
+      },
+      {
+        "title": "Security and Accessibility",
+        "description": "By writing every line ourselves, we build in security from day one. And with accessibility in mind, your site serves every visitor while meeting Google’s best-practice standards."
+      }
+    ]
+---
+
+<Layout title=`${locationName} Custom Web Development | Local Business Websites` description={content[0].description}>
+  <MountainsHero title=`${locationName} Web Designer` />
+  <TopLocationsPage locationName={locationName} content={content} />
+  <CallToAction />
+</Layout>
+
+
+
