@@ -1,0 +1,102 @@
+@use '../../../../styles/vars' as *;
+
+.Portfolio {
+  padding-bottom: $gap-xxlarge;
+  padding-top: $gap-xxlarge;
+  background: $card-background;
+  .content {
+    .header {
+      display: flex;
+      justify-content: space-between;
+      gap: $gap-large;
+      h1,
+      .right {
+        width: fill-available;
+        max-width: 50%;
+        text-align: start;
+      }
+      p {
+        text-align: start;
+      }
+      .right {
+        border-left: 1px solid $border-color;
+        padding-left: $gap-xlarge;
+      }
+    }
+    .projectsContainer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: $gap-xlarge;
+      gap: $gap-large;
+      height: fit-content;
+      .project {
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+        width: 100%;
+        height: fill-available;
+        img {
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+      .text {
+        margin-top: $gap-small;
+        margin-bottom: $gap-medium;
+        height: fill-available;
+        flex: 1;
+      }
+
+      h2 {
+        font-size: $fs-medium;
+      }
+      p {
+        font-size: $fs-small;
+      }
+    }
+    @media (max-width: $breakpoint-lg) {
+      .projectsContainer .project {
+        h2 {
+          font-size: $fs-regular;
+        }
+      }
+    }
+    @media (max-width: $breakpoint-md) {
+      .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: $gap-regular;
+        h1,
+        .right {
+          max-width: 100%;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          max-width: 80%;
+          text-align: center;
+        }
+        .right {
+          border-left: none;
+          // border-bottom: 1px solid $border-color;
+          // padding-bottom: $gap-xlarge;
+          padding-left: 0;
+        }
+
+        p {
+          text-align: center;
+        }
+      }
+      .projectsContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: $gap-xlarge;
+
+        .project {
+          border-top: 1px solid $border-color;
+          padding-top: $gap-xlarge;
+        }
+      }
+    }
+  }
+}
