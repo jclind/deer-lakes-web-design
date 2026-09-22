@@ -18,11 +18,12 @@ const GOOGLE_ANALYTICS_ID = 'G-XY34C1C1DR'
 	<head>
 		<!-- Google tag (gtag.js) -->
 		<script async src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`}></script>
-		<script is:inline>
+		<!-- define:vars wraps this script in a function, so gtag is assigned to window to stay global -->
+		<script is:inline define:vars={{ GOOGLE_ANALYTICS_ID }}>
 			window.dataLayer = window.dataLayer || [];
-			function gtag(){ dataLayer.push(arguments); }
+			window.gtag = function(){ dataLayer.push(arguments); };
 			gtag('js', new Date());
-			gtag('config', '${GOOGLE_ANALYTICS_ID}');
+			gtag('config', GOOGLE_ANALYTICS_ID);
 		</script>
 
 		<meta charset="UTF-8" />

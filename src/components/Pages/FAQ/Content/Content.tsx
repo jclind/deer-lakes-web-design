@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styles from './Content.module.scss'
-import { ChevronDown, ChevronUp } from 'lucide-react'
+import { LuChevronDown, LuChevronUp } from 'react-icons/lu'
 import { LUMP_SUM_PRICE } from '../../../../assets/data/pricing'
 import { ButtonLink } from '../../../Common/ButtonLink'
 
@@ -63,7 +63,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ faq, isOpen, toggle }) => (
     >
       {faq.question}
       <span className={styles.chevron}>
-        {isOpen ? <ChevronUp /> : <ChevronDown />}
+        {isOpen ? <LuChevronUp size={24} /> : <LuChevronDown size={24} />}
       </span>
     </button>
     <div className={`${styles.faqAnswer} ${isOpen ? styles.open : ''}`}>
