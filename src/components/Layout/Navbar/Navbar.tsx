@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styles from './Navbar.module.scss'
 import { navLinks } from './navData'
 import { Twirl as Hamburger } from 'hamburger-react'
-import { ChevronDown, Menu, X } from 'lucide-react'
+import { LuChevronDown } from 'react-icons/lu'
 
 interface NavbarProps {
   currentPath: string
@@ -44,7 +44,7 @@ const MobileNavItem: React.FC<{ item: NavLink; depth?: number }> = ({
         style={{ paddingLeft: `${1 + depth}rem` }}
       >
         <span>{item.title}</span>
-        <ChevronDown
+        <LuChevronDown
           className={`${styles.icon} ${isOpen ? styles.open : ''}`}
         />
       </button>
@@ -128,7 +128,7 @@ const Navbar = ({ currentPath }: NavbarProps) => {
                     currentPath === link.path ? styles.active : ''
                   }`}
                 >
-                  {link.title} {hasChildren && <ChevronDown size={16} />}
+                  {link.title} {hasChildren && <LuChevronDown size={16} />}
                 </a>
 
                 {/* First dropdown */}
@@ -156,7 +156,7 @@ const Navbar = ({ currentPath }: NavbarProps) => {
                             className={styles.dropdownLink}
                           >
                             {child.title}{' '}
-                            {hasSubChildren && <ChevronDown size={12} />}
+                            {hasSubChildren && <LuChevronDown size={12} />}
                           </a>
 
                           {/* Second dropdown */}
