@@ -6,71 +6,71 @@ export const MONTHLY_SUM_PRICE = '100'
 export const pricing = [
   {
     icon: BsCircleSquare,
-    title: 'Lump Sum',
+    title: 'One-time',
     price: `$${LUMP_SUM_PRICE}`,
-    priceSubHeader: '+25/mo hosting',
+    priceSubHeader: '+$25/mo hosting',
     theme: 'secondary',
     features: [
       {
         isIncluded: true,
-        feature: 'Development & Design',
+        feature: 'Design and development',
       },
       {
         isIncluded: true,
-        feature: '5 Pages Included (+$100/additional)',
+        feature: '5 pages (+$100 each extra)',
       },
       {
         isIncluded: true,
-        feature: '$25/mo Hosting',
+        feature: '$25/mo hosting',
       },
       {
         isIncluded: true,
-        feature: '+$50/mo Unlimited Edits',
+        feature: 'Unlimited edits (+$50/mo)',
       },
       {
         isIncluded: false,
-        feature: 'Priority Support',
+        feature: 'Priority support',
       },
       {
         isIncluded: false,
-        feature: 'Lifetime Updates',
+        feature: 'Lifetime updates',
       },
     ],
-    callToAction: 'Get Started',
+    callToAction: 'Get started',
   },
   {
     icon: BsStar,
     title: 'Monthly',
     price: `$${MONTHLY_SUM_PRICE}`,
-    priceSubHeader: 'Per Month',
+    priceSubHeader: 'Per month',
     theme: 'primary',
     features: [
       {
         isIncluded: true,
-        feature: 'Development & Design',
+        feature: 'Design and development',
       },
       {
         isIncluded: true,
-        feature: '5 Pages Included (+$100/additional)',
+        feature: '5 pages (+$100 each extra)',
       },
       {
         isIncluded: true,
-        feature: 'Hosting Included',
+        feature: 'Hosting included',
       },
       {
         isIncluded: true,
-        feature: 'Unlimited Edits',
+        feature: 'Unlimited edits',
       },
       {
         isIncluded: true,
-        feature: 'Priority Support',
+        feature: 'Priority support',
       },
       {
         isIncluded: true,
-        feature: 'Lifetime Updates',
+        feature: 'Lifetime updates',
       },
     ],
-    callToAction: 'Get Started',
+    callToAction: 'Get started',
   },
   {
     icon: BsXDiamond,
@@ -81,29 +81,29 @@ export const pricing = [
     features: [
       {
         isIncluded: true,
-        feature: 'Tailored Design & Development',
+        feature: 'Fully custom design',
       },
       {
         isIncluded: true,
-        feature: 'Unlimited Pages',
+        feature: 'Unlimited pages',
       },
       {
         isIncluded: true,
-        feature: 'Advanced Features',
+        feature: 'Advanced features',
       },
       {
         isIncluded: true,
-        feature: 'Unlimited Edits',
+        feature: 'Unlimited edits',
       },
       {
         isIncluded: true,
-        feature: 'Priority Support',
+        feature: 'Priority support',
       },
       {
         isIncluded: true,
-        feature: 'Lifetime Updates',
+        feature: 'Lifetime updates',
       },
     ],
-    callToAction: 'Contact Us',
+    callToAction: 'Contact me',
   },
 ]

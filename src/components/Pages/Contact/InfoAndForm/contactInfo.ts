@@ -3,18 +3,18 @@ import { EMAIL_ADDRESS, PHONE_NUMBER } from '../../../../assets/data/legalInfo'
 export const contactInfo = [
   {
     icon: BsEnvelope,
-    title: 'Email Us',
+    title: 'Email',
     subtitle: EMAIL_ADDRESS,
   },
   {
     icon: BsPhone,
-    title: 'Call Us',
+    title: 'Call',
     subtitle: PHONE_NUMBER,
   },
 
   {
     icon: BsClock,
-    title: '24 / 7 Support',
-    subtitle: 'Prompt response time',
+    title: 'Support',
+    subtitle: 'I reply within a day',
   },
 ]

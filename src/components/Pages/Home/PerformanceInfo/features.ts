@@ -10,20 +10,17 @@ import {
 export const features = [
   {
     icon: BsLightning,
-    title: 'Page Speed',
-    subtitle: 'Fast Websites Convert More Visitors',
-    description: `Slow websites frustrate users and drive them away. Faster load times improve user experience, keep visitors engaged, and help you rank higher on Google.`,
+    title: 'Page speed',
+    description: `People leave slow sites before they finish loading, and Google ranks slow sites lower, so a slow site loses visitors twice.`,
   },
   {
     icon: BsPersonCheck,
     title: 'Accessibility',
-    subtitle: 'Websites Everyone Can Use',
-    description: `Accessibility ensures your site is usable by everyone, including people with disabilities. It builds trust, expands your audience, and shows your commitment to inclusivity.`,
+    description: `Some of your customers use a screen reader, a keyboard instead of a mouse, or zoom to read. An accessible site works for them, and Google rewards a lot of the same work.`,
   },
   {
     icon: BsSearch,
-    title: 'SEO (Search Engine Optimization)',
-    subtitle: 'Get Found Online',
-    description: `SEO helps your site rank higher on search engines, making it easier for customers to find you and driving more organic traffic to grow your business.`,
+    title: 'SEO',
+    description: `When someone searches for what you do in your town, SEO decides whether they find you or a competitor.`,
   },
 ]

@@ -6,7 +6,7 @@ export const navLinks = [
   {
     title: 'About',
     children: [
-      { title: 'About Us', path: '/about' },
+      { title: 'About me', path: '/about' },
       { title: 'FAQ', path: '/faq' },
     ],
   },

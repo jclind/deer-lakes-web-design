@@ -10,38 +10,38 @@ import {
 export const features = [
   {
     icon: BsPhone,
-    title: 'Mobile-First Design',
+    title: 'Built for phones first',
     description:
-      'Our Mobile-First Design ensures your website looks and functions flawlessly on smartphones and tablets. By prioritizing mobile users, we enhance user experience and boost engagement.',
+      'Most of your visitors will be on a phone, so I design the phone layout first and work up to tablet and desktop from there. Nothing gets squeezed or cut off on a small screen.',
   },
   {
     icon: BsLightning,
-    title: 'Blazing Page Speeds',
+    title: 'Fast pages',
     description:
-      'Our websites are optimized for blazing page speeds, ensuring a fast and seamless browsing experience. Speed matters — we ensure a google  performance speed of 95-100.',
+      'Every site I build scores 95 to 100 on Google PageSpeed. Fast pages keep people from giving up and hitting the back button, and Google ranks them higher too.',
   },
   {
     icon: BsSearch,
-    title: 'SEO Optimization ',
+    title: 'Set up for search',
     description:
-      'Our SEO optimization helps your business rank higher on Google by ensuring fast page speeds and following best practices, making it easier for customers to find you.',
+      "Clear page titles and descriptions, a clean page structure, and fast load times. These are the parts of SEO I control, and they're done right from day one.",
   },
   {
     icon: BsPersonCheck,
-    title: 'Latest Accessibility Standards',
+    title: 'Usable by everyone',
     description:
-      'We design with everyone in mind. By adhering to the latest accessibility standards, we ensure that your website is inclusive and user-friendly for all individuals. ',
+      "Proper labels, keyboard navigation, and readable color contrast, so people who use a screen reader or can't use a mouse can still find their way around your site.",
   },
   {
     icon: BsTools,
-    title: 'Ongoing Support and Maintenance',
+    title: 'Support after launch',
     description:
-      'Our goal is to create long-term partnerships with our clients. We provide continuous maintenance to keep your site secure, up-to-date, and functioning at its best.',
+      "I keep your site updated and running after it goes live. If something breaks or you want a change, you text me and I take care of it. You don't need to learn any software.",
   },
   {
     icon: BsCode,
-    title: '100% Hand-Coded',
+    title: 'Hand-coded',
     description:
-      'Every website we create is built from scratch—no templates, just clean, handcrafted code. This ensures your site is unique, optimized for performance, and tailored to your business needs.',
+      "I write every site from scratch. There's no template underneath, so nothing extra slows it down, and your site won't look like a hundred others built on the same theme.",
   },
 ]
