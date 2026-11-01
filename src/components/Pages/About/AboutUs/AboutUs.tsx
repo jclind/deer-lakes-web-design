@@ -13,20 +13,19 @@ const AboutUs = () => {
           </div>
           <div className={styles.content}>
             <div className={styles.our_goal}>
-              <h2 className='section-title text-inverted'>Our Goal</h2>
+              <h2 className='section-title text-inverted'>Why I started</h2>
               <p className='section-paragraph text-inverted'>
-                Deer Lakes Web Design was started with one goal in mind: to
-                eliminate the barriers small businesses face when trying to
-                establish a strong online presence. For too long, professional,
-                high quality websites have been out of reach for many due to
-                high costs and confusing processes. We’re here to change that.
+                A good website shouldn't cost a small business thousands of
+                dollars before it brings in a single customer. I kept seeing
+                owners either go without a site or pay a lot for one that loaded
+                slowly and never showed up on Google. A monthly plan fixes the
+                first problem, and doing the work properly fixes the second.
               </p>
             </div>
             <div className={styles.our_values}>
-              <h2 className='section-title text-inverted'>Our Values</h2>
+              <h2 className='section-title text-inverted'>What I care about</h2>
               <p className='section-paragraph text-inverted'>
-                We’re dedicated to delivering a website that will benefit your
-                business which is why we hold true to these important values:
+                Every site I build gets the same priorities:
               </p>
               <div className={styles.values}>
                 {values.map(value => (
@@ -37,18 +36,13 @@ const AboutUs = () => {
                 ))}
               </div>
               <p className='section-paragraph text-inverted'>
-                Not only do these values help relationships with our clients,
-                they also ensure we create the best website we can for you as
-                well as keeping Google and your customers happy.
-              </p>
-              <p className='section-paragraph text-inverted'>
-                For more information on why our values are as important with
-                search engines as well as our clients you can learn more on our
-                ‘Web Design’ page.
+                Google looks at most of these same things when it ranks your
+                site, so getting them right helps with customers and with
+                search. The Web Design page explains each one.
               </p>
             </div>
             <ButtonLink
-              text='Learn About Web Design'
+              text='Learn about web design'
               link='/web-design'
               size='medium'
             />

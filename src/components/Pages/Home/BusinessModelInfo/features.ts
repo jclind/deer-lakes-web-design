@@ -2,22 +2,22 @@ import { MONTHLY_SUM_PRICE } from '../../../../assets/data/pricing'
 
 export const features = [
   {
-    title: `0$ Down, $${MONTHLY_SUM_PRICE}/mo`,
-    description: `Start your website with no upfront cost. Pay just $${MONTHLY_SUM_PRICE} per month, which includes hosting, maintenance, updates, and unmatched support.`,
+    title: `$0 down, $${MONTHLY_SUM_PRICE}/mo`,
+    description: `Nothing up front. $${MONTHLY_SUM_PRICE} a month covers hosting, maintenance, updates, and edits, with no surprise bills.`,
   },
   {
-    title: '100% Secure',
+    title: 'Secure by default',
     description:
-      'Your website is built with top-tier security to protect your business. Backed by the latest standards, you can trust your site is always safe.',
+      'No WordPress plugins or page builder to patch, which removes the most common way small sites get hacked.',
   },
   {
-    title: 'Personal Support',
+    title: 'You talk to me',
     description:
-      'When you text or email at any time, you’ll reach me directly, the developer of your website. No middlemen, no delays, just fast, personalized support.',
+      'Text or email me and you reach the person who built your site. No support tickets, no account manager.',
   },
   {
-    title: 'Money-Back Guarantee',
+    title: 'Money-back guarantee',
     description:
-      'If I can’t deliver a feature you need, I’ll void the contract and refund your money. Your satisfaction is my top priority.',
+      "If you don't like the design, I'll refund you. The guarantee runs until you approve the design and I start building.",
   },
 ]

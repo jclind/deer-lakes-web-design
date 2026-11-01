@@ -6,44 +6,34 @@ const AboutMe = () => {
   return (
     <div className={styles.about_me}>
       <div className='page__inner'>
-        <h1 className='section-title'>About Me</h1>
+        <h1 className='section-title'>About me</h1>
         <div className={styles.container}>
           <div className={styles.image}>
             <img src='/images/about_me_headshot.webp' alt='' />
           </div>
           <div className={styles.content}>
             <div className={styles.text}>
-              <h2>My Story & Business Model</h2>
+              <h2>My story</h2>
               <p className='section-paragraph'>
-                Hi there, I’m Jesse and I am the sole owner and lead developer
-                of Deer Lakes Web Designs. My journey in web development began
-                over 7 years ago with a simple curiosity about how websites are
-                built and the science behind exceptional designs. Because I am
-                mostly self taught, I have studied high performing websites and
-                top class designs. I have made it a point to learn how to make
-                websites the right way through hand coding everything and
-                implementing the best practices.
+                I'm Jesse, and I run Deer Lakes Web Design by myself. I've been
+                building websites since 2016. I started because I wanted to know
+                how websites worked and why some looked so much better than
+                others. I'm mostly self-taught. I learned by pulling apart fast,
+                well-designed sites to see what made them good, and I still
+                write every site by hand.
               </p>
               <p className='section-paragraph'>
-                I personally believe that anyone can use their skills to be a
-                blessing to others and because of this I discovered that I could
-                especially help small businesses. In my experience many small
-                businesses don’t have the money to spend thousands of dollars
-                upfront on a new website. And even when they do they will be
-                overcharged, taken advantage of, or simply given a poorly
-                optimized or designed website. It’s to find someone who wants
-                the best for you and your business. That’s why I take a
-                different approach to my development and pricing. With our $0
-                and only ${MONTHLY_SUM_PRICE} per month plan you don’t have to
-                worry about paying thousands of dollars without knowing the
-                quality you will be receiving. At Deer Lakes Web Designs you can
-                be sure that your website will have the best possible
-                performance and a design that works for you. Besides, if we
-                can’t create a design that is suitable for you, you can rest
-                assured with our money back guarantee.
+                I believe people should use what they're good at to help others,
+                and for me that turned out to be small businesses. A lot of
+                owners can't put thousands of dollars into a website up front.
+                The ones who do often get overcharged, or end up with a slow site
+                nobody can find. So I price it differently. You pay nothing down
+                and ${MONTHLY_SUM_PRICE} a month, which means you aren't betting
+                a big check on work you haven't seen yet. If I can't come up with
+                a design you're happy with, you get your money back.
               </p>
             </div>
-            <ButtonLink text='Contact Us' link='/contact' size='large' />
+            <ButtonLink text='Contact me' link='/contact' size='large' />
           </div>
         </div>
       </div>

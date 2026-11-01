@@ -7,7 +7,7 @@ const PerformanceInfo = () => {
       <div className={`page__inner ${styles.page__inner}`}>
         <div className={styles.content}>
           <h1 className={`section-title text-inverted ${styles.box_1}`}>
-            Why Page Speed, Accessibility, and SEO Matter for Your Business
+            Why speed, accessibility, and SEO matter
           </h1>
           <div className={`${styles.images_container} ${styles.box_2}`}>
             <div className={styles.chart_image}>
@@ -34,7 +34,7 @@ const PerformanceInfo = () => {
                 <div className={styles.right}>
                   <h2 className='text-inverted'>{feature.title}</h2>
                   <p className='text-inverted section-paragraph'>
-                    <i>{feature.subtitle}</i> — {feature.description}
+                    {feature.description}
                   </p>
                 </div>
               </div>

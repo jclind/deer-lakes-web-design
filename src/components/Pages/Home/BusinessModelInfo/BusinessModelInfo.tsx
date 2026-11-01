@@ -17,24 +17,22 @@ const BusinessModelInfo = () => {
             />
           </div>
           <span className={styles.headshot_title}>
-            Jesse Lind - Owner & Developer
+            Jesse Lind, owner and developer
           </span>
         </div>
         <div className={styles.content}>
           <h1 className='section-title'>
-            Affordable Websites
+            Affordable websites
             <br />
-            Built for Your Small Business
+            for small businesses
           </h1>
           <p className='section-paragraph'>
-            With our ${MONTHLY_SUM_PRICE}/month plan, you'll get{' '}
-            <strong>5 standard pages</strong> (just $100 per additional page),
-            plus <strong>professional design</strong>,{' '}
-            <strong>development</strong>, and <strong>hosting</strong>
-            —everything you need to get your site online. Backed by an initial{' '}
-            <strong>6-month contract</strong>, your website will be secure,
-            user-friendly, and built to help your business grow. Enjoy
-            personalized support and our money-back guarantee.
+            For ${MONTHLY_SUM_PRICE} a month you get <strong>5 pages</strong>, the{' '}
+            <strong>design</strong>, the <strong>build</strong>, and{' '}
+            <strong>hosting</strong>. Extra pages are $100 each. The first
+            contract is <strong>6 months</strong>, then it goes month to month.
+            You deal with me the whole time, and if you don't like the design,
+            you get your money back before I start building.
           </p>
 
           <div className={styles.features}>
@@ -50,7 +48,7 @@ const BusinessModelInfo = () => {
               </div>
             ))}
           </div>
-          <ButtonLink text="Let's Get Started" link='/contact' size='large' />
+          <ButtonLink text="Let's get started" link='/contact' size='large' />
         </div>
       </div>
     </div>

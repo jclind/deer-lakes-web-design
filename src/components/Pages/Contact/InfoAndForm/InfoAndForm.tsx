@@ -8,13 +8,11 @@ const InfoAndForm = () => {
       <div className='page__inner'>
         <div className={styles.container}>
           <div className={styles.info}>
-            <h2 className='section-title'>Let's Work Together</h2>
+            <h2 className='section-title'>Let's work together</h2>
             <p className='section-paragraph'>
-              Have a project in mind or need more information? Don’t hesitate to
-              reach out with your ideas for your new website! Feel free to drop
-              me a message using the contact form or contact me directly by
-              phone or email. I’m always available to discuss how we can work
-              together to achieve your goals.
+              Tell me what your business does and what you want from a website.
+              Use the form, or call or email me directly. You'll hear back from
+              me, not an assistant.
             </p>
             <div className={styles.contact_info_container}>
               {contactInfo.map(item => (

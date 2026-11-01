@@ -13,13 +13,12 @@ const CallToAction = () => {
           />
         </div>
         <div className={styles.content}>
-          <h1 className='section-title'>Ready To Get Started?</h1>
+          <h1 className='section-title'>Ready to get started?</h1>
           <p className='section-paragraph'>
-            Let’s make your business stand out online. Get in touch with us
-            today to discuss your project, and we’ll help you get started with a
-            website that works for you.
+            Tell me about your business and what you need from a website. I'll
+            get back to you with ideas and a price.
           </p>
-          <ButtonLink text='Contact Us' link='/contact' size='large' />
+          <ButtonLink text='Contact me' link='/contact' size='large' />
         </div>
       </div>
       <div className={styles.half_background}></div>
