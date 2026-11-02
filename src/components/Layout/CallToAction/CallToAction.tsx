@@ -13,7 +13,7 @@ const CallToAction = () => {
           />
         </div>
         <div className={styles.content}>
-          <h1 className='section-title'>Ready to get started?</h1>
+          <h2 className='section-title'>Ready to get started?</h2>
           <p className='section-paragraph'>
             Tell me about your business and what you need from a website. I'll
             get back to you with ideas and a price.

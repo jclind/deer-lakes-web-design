@@ -11,11 +11,11 @@ export const navLinks = [
     ],
   },
   {
-    title: 'Web Design',
+    title: 'Web design',
     path: '/web-design',
   },
   {
-    title: 'Top Locations',
+    title: 'Top locations',
     children: [
       {
         title: 'Pittsburgh',

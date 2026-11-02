@@ -100,9 +100,9 @@ const Content = () => {
             <p>
               For more info,{' '}
               <a href='/web-design'>
-                checkout my web design values and process
+                see how I approach web design
               </a>
-              . Or shoot me a message!
+              , or send me a message.
             </p>
             <div className={styles.buttons}>
               <ButtonLink

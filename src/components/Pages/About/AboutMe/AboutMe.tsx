@@ -29,8 +29,9 @@ const AboutMe = () => {
                 The ones who do often get overcharged, or end up with a slow site
                 nobody can find. So I price it differently. You pay nothing down
                 and ${MONTHLY_SUM_PRICE} a month, which means you aren't betting
-                a big check on work you haven't seen yet. If I can't come up with
-                a design you're happy with, you get your money back.
+                a big check on work you haven't seen yet. If you don't like the
+                design, you can get your money back any time before you approve
+                it.
               </p>
             </div>
             <ButtonLink text='Contact me' link='/contact' size='large' />
