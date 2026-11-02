@@ -9,7 +9,7 @@ interface Props {
 	description?: string;
 }
 
-const { title = "Deer Lakes Web Design", description = `An elegant and effective online presence doesn't have to break the bank. Get a 100% hand coded website for your business starting at $${MONTHLY_SUM_PRICE}/mo.` } = Astro.props;
+const { title = "Deer Lakes Web Design", description = `Hand-coded websites for small businesses in the Pittsburgh area. $0 down and $${MONTHLY_SUM_PRICE} a month, with hosting and edits included.` } = Astro.props;
 const GOOGLE_ANALYTICS_ID = 'G-XY34C1C1DR'
 ---
 
@@ -31,7 +31,7 @@ const GOOGLE_ANALYTICS_ID = 'G-XY34C1C1DR'
 		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{`${title} | Deer Lakes Web Design`}</title>
-		<meta name="description" content={description || "Deer Lakes Web Design is a web design company that specializes in creating beautiful, responsive websites for small businesses."} />
+		<meta name="description" content={description || `Hand-coded websites for small businesses in the Pittsburgh area. $0 down and $${MONTHLY_SUM_PRICE} a month, with hosting and edits included.`} />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content={Astro.url.href} />
 		<meta property="og:image" content="/images/DLWD_logo_small.webp" />
