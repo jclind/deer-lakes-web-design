@@ -6,9 +6,7 @@ const Pricing = () => {
     <div className={styles.pricing}>
       <div className='page__inner'>
         <h1 className='section-title'>
-          Select The Best Plan
-          <br />
-          For Your Needs
+          Pick a plan
         </h1>
         <PricingCardContainer />
       </div>

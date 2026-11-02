@@ -10,16 +10,16 @@ const Hero = () => {
       <div className={`${styles.hero__inner} page__inner`}>
         <div className={styles.content}>
           <h1 className='page-title text-inverted'>
-            Web Design for <br /> Small Businesses
+            Web design for <br /> small businesses
           </h1>
           <p className='section-paragraph text-inverted'>
-            An elegant and effective online presence doesn't have to break the
-            bank. Get a 100% hand coded website for your business starting at $
-            {MONTHLY_SUM_PRICE}/mo.
+            I build websites by hand for small businesses, with no templates, no
+            page builders, and no big bill up front. Plans start at $
+            {MONTHLY_SUM_PRICE} a month.
           </p>
           <div className={styles.buttons}>
-            <ButtonLink text='Get Started' link='/contact' color='tertiary' />
-            <ButtonLink text='About Us' link='/about' color='secondary' />
+            <ButtonLink text='Get started' link='/contact' color='tertiary' />
+            <ButtonLink text='About me' link='/about' color='secondary' />
           </div>
         </div>
         <div className={styles.image}>

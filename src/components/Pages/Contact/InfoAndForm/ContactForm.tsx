@@ -66,7 +66,7 @@ const ContactForm = () => {
       </label>
 
       <label>
-        Phone Number *
+        Phone number *
         <input type='tel' name='phone' required onChange={handleChange} />
       </label>
 
@@ -78,7 +78,7 @@ const ContactForm = () => {
       {/* Google reCAPTCHA */}
       <div data-netlify-recaptcha='true'></div>
 
-      <button type='submit'>Send Message</button>
+      <button type='submit'>Send message</button>
       {status === 'success' && (
         <p>✅ Your message has been sent successfully!</p>
       )}

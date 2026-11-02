@@ -13,21 +13,13 @@ const WebDesignImportance = () => {
           />
         </div>
         <div className={styles.content}>
-          <h1 className='page-title'>The Importance Of Good Web Design</h1>
+          <h1 className='page-title'>What good web design takes</h1>
 
           <p className={styles.description}>
-            At Deer Lakes Web Designs, we take a handcrafted approach to
-            building websites—every line of code is written by us, giving me
-            complete control over your site’s design, performance, SEO,
-            security, and accessibility. This ensures your website isn’t just
-            visually stunning but also optimized to drive growth for your
-            business. Any additional questions? Send me a message, I’d love to
-            hear from you! websites—every line of code is written by us, giving
-            me complete control over your site’s design, performance, SEO,
-            security, and accessibility. This ensures your website isn’t just
-            visually stunning but also optimized to drive growth for your
-            business. Any additional questions? Send me a message, I’d love to
-            hear from you!
+            I write every line of code for the sites I build. That gives me
+            direct control over how your site looks, how fast it loads, how it
+            shows up on Google, and who can use it. Here's why each of those
+            matters. If you have questions, send me a message.
           </p>
           <div className={styles.web_design_info}>
             {info.map(item => (

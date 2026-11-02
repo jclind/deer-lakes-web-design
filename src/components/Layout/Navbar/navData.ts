@@ -6,16 +6,16 @@ export const navLinks = [
   {
     title: 'About',
     children: [
-      { title: 'About Us', path: '/about' },
+      { title: 'About me', path: '/about' },
       { title: 'FAQ', path: '/faq' },
     ],
   },
   {
-    title: 'Web Design',
+    title: 'Web design',
     path: '/web-design',
   },
   {
-    title: 'Top Locations',
+    title: 'Top locations',
     children: [
       {
         title: 'Pittsburgh',

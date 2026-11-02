@@ -1,7 +1,7 @@
 export const values = [
-  'Speed & Performance',
-  'Affordability',
-  'SEO Optimization',
+  'Speed',
+  'Affordable pricing',
+  'SEO',
   'Security',
   'Accessibility',
   'Transparency',
