@@ -16,14 +16,14 @@ const PrivacyPolicy = () => {
       category: 'A. Identifiers',
       examples:
         'Contact details, such as real name, alias, postal address, telephone or mobile contact number, unique personal identifier, online identifier, Internet Protocol address, email address, and account name',
-      collected: 'NO',
+      collected: 'YES',
     },
     {
       category:
         'B. Personal information as defined in the California Customer Records statute',
       examples:
         'Name, contact information, education, employment, employment history, and financial information',
-      collected: 'NO',
+      collected: 'YES',
     },
     {
       category:
@@ -47,12 +47,12 @@ const PrivacyPolicy = () => {
       category: 'F. Internet or other similar network activity',
       examples:
         'Browsing history, search history, online behavior, interest data, and interactions with our and other websites, applications, systems, and advertisements',
-      collected: 'NO',
+      collected: 'YES',
     },
     {
       category: 'G. Geolocation data',
       examples: 'Device location',
-      collected: 'NO',
+      collected: 'YES',
     },
     {
       category: 'H. Audio, electronic, sensory, or similar information',
@@ -92,7 +92,7 @@ const PrivacyPolicy = () => {
           </div>
 
           <div className={styles.last_updated}>
-            Last updated February 04, 2025
+            Last updated November 04, 2026
           </div>
           <section>
             <div className='text'>
@@ -765,7 +765,16 @@ const PrivacyPolicy = () => {
               </p>
               <ul>
                 <li>
-                  <p>Category H - As long as the user has an account with us</p>
+                  <p>
+                    Categories A and B - As long as needed to respond to your
+                    inquiry and provide the Services
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Categories F and G - For the retention period set in our
+                    analytics settings
+                  </p>
                 </li>
               </ul>
 
